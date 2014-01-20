@@ -1,0 +1,516 @@
+-------------------------------------------------------------------
+Fri Jan 17 14:22:08 UTC 2014 - lslezak@suse.cz
+
+- the development has been moved to Yast Gihub
+  (https://github.com/yast/skelcd-control-SLES),
+  the package is autosumbmitted by Jenkins CI
+- removed "magic" get_version_number.sh script (use static
+  versioning as usual) (the script was not compatible with Yast
+  workflow at Jenkins)
+- version 12.0.0
+
+-------------------------------------------------------------------
+Wed Jan 15 15:06:39 CET 2014 - behlert@suse.de
+
+- added password dialogs again 
+
+-------------------------------------------------------------------
+Tue Jan 14 08:03:38 UTC 2014 - lslezak@suse.cz
+
+- removed calling inst_mode during upgrade (by locilka)
+- fix validation of control.xml (by jreidinger)
+- remove server scenarios as they will be replaced by roles when
+  someone defines them (by jreidinger)
+- make full summary for autoinstallation to allow user modify it
+  (by jreidinger)
+- added partitioning/btrfs_default_subvolume (by aschnell)
+
+-------------------------------------------------------------------
+Tue Dec 10 15:17:39 UTC 2013 - lslezak@suse.cz
+
+- added SCC client for registering the system
+- version 2013.12.10
+
+-------------------------------------------------------------------
+Thu Dec  5 16:23:29 CET 2013 - ro@suse.de
+
+- update file from yast master git 
+
+-------------------------------------------------------------------
+Fri Nov 15 11:48:53 CET 2013 - ro@suse.de
+
+- add id to copy_to_system_item node in control.xml (fix build) 
+
+-------------------------------------------------------------------
+Wed Apr 10 11:59:57 CEST 2013 - kukuk@suse.de
+
+- Set some variables back to SLES default
+
+-------------------------------------------------------------------
+Wed Apr 10 11:52:01 CEST 2013 - kukuk@suse.de
+
+- Use Factory control.xml for Devel:SLE-12:Factory
+
+-------------------------------------------------------------------
+Fri Mar  1 08:56:42 CET 2013 - jsuchome@suse.cz
+
+- make the "Check drivers" error message depend on control.xml
+  variable (fate#312875, bnc#805251)
+
+-------------------------------------------------------------------
+Fri Dec 21 10:57:40 CET 2012 - jsuchome@suse.cz
+
+- added KVM installation scenario (bnc#795067)
+
+-------------------------------------------------------------------
+Mon Jan  9 13:39:10 CET 2012 - locilka@suse.cz
+
+- Added ntp-client into list of cloned modules (bnc #738019).
+
+-------------------------------------------------------------------
+Mon Oct 31 09:15:10 CET 2011 - jsuchome@suse.cz
+
+- save ecdsa keys as well (bnc#726468) 
+
+-------------------------------------------------------------------
+Fri Oct  7 11:40:40 UTC 2011 - jsrain@site
+
+- updated URL in the congratulation dialog (bnc#720481)
+
+-------------------------------------------------------------------
+Fri Jul  8 09:04:14 CEST 2011 - jsrain@suse.cz
+
+- adaptations for unattended migration (fate#310481)
+
+-------------------------------------------------------------------
+Fri Mar 12 10:53:55 CET 2010 - locilka@suse.cz
+
+- Only upgrade packages if upgrading from SLES 11, otherwise use
+  patterns for upgrade (BNC #587544).
+
+-------------------------------------------------------------------
+Tue Mar  2 14:30:31 CET 2010 - locilka@suse.cz
+
+- CIM service is proposed as disabled by default (BNC #584524).
+
+-------------------------------------------------------------------
+Thu Jan 28 12:35:04 CET 2010 - kmachalkova@suse.cz
+
+- Added missing <label> to network services proposal (a default 
+  "Installation Overview" was used instead - bnc#572654) 
+
+-------------------------------------------------------------------
+Wed Dec  9 13:40:07 CET 2009 - locilka@suse.cz
+
+- Enabled CIM service by default in newly added services proposal
+  (FATE #305583)
+- Package kde4-kdm has been renamed to kdm (SLES, SLED control
+  files) (bnc #561627)
+
+-------------------------------------------------------------------
+Tue Nov 10 12:06:03 CET 2009 - kmachalkova@suse.cz
+
+- New variable in globals: run_init_scripts_in_parallel, to set
+  /etc/sysconfig/boot:RUN_PARALLEL (FaTE#307555)
+
+-------------------------------------------------------------------
+Fri Nov  6 10:24:57 CET 2009 - jsrain@suse.de
+
+- defined live installation workflow (fate#308308)
+
+-------------------------------------------------------------------
+Mon Jan 26 14:30:59 CET 2009 - locilka@suse.cz
+
+- Disabling [Back] buttons in the very first interactive dialogs
+  in second stage (bnc #468677).
+
+-------------------------------------------------------------------
+Fri Dec 19 13:07:49 CET 2008 - locilka@suse.cz
+
+- Pattern WBEM added into two server scenarios (bnc #458332).
+
+-------------------------------------------------------------------
+Fri Dec  5 14:42:54 CET 2008 - locilka@suse.cz
+
+- Using new control file validation - control.rng (bnc #455994)
+
+-------------------------------------------------------------------
+Fri Nov 28 15:08:08 CET 2008 - locilka@suse.cz
+
+- Update Installation Scenarios labels (bnc #428202).
+
+-------------------------------------------------------------------
+Thu Nov 20 18:44:20 CET 2008 - locilka@suse.cz
+
+- Added shadow desktops to have a fallback if user selects some
+  other desktop than the default one (bnc #446640).
+
+-------------------------------------------------------------------
+Tue Nov 11 13:29:04 CET 2008 - juhliarik@suse.cz
+
+- Changed order (summary) of yast modules in Expert tab 
+  (bnc #441434) 
+
+-------------------------------------------------------------------
+Mon Oct 27 17:29:20 CET 2008 - locilka@suse.cz
+
+- Added 'kdump' to 'clone_modules' (SLES) (bnc #436365).
+- Calling inst_prepareprogress also during Upgrade, all control
+  files changed (bnc #438848).
+
+-------------------------------------------------------------------
+Fri Oct 17 12:33:05 CEST 2008 - locilka@suse.cz
+
+- Added software->display_support_status flag (bnc #435479).
+
+-------------------------------------------------------------------
+Fri Oct 17 11:00:17 CEST 2008 - locilka@suse.cz
+
+- Default desktop changed to 'gnome' the be written at the end
+  of the installation (bnc #436094).
+
+-------------------------------------------------------------------
+Mon Oct 13 14:39:11 CEST 2008 - locilka@suse.cz
+
+- Enabled going_back in Add-Ons during installation (bnc #434735).
+
+-------------------------------------------------------------------
+Wed Oct  8 14:06:31 CEST 2008 - locilka@suse.cz
+
+- Added globals->polkit_default_privs="restrictive" to protect
+  system from anybody being able to shut it down with gdm
+  (bnc #431158).
+- Removed dummy desktop selected by inst_scenarios. That script
+  uses new PackagesProposal module and resets the DefaultDesktop to
+  no desktop and no required patterns, dummy desktop is not needed
+  anymore (bnc #432572, bnc #431902).
+- Changing desktop name to an empty label as there are no other
+  desktops available anyway (bnc #431336).
+- Adjusting presentation_order for proposal_modules (bnc #431580).
+
+-------------------------------------------------------------------
+Thu Oct  2 14:11:34 CEST 2008 - locilka@suse.cz
+
+- Added 'default_ntp_setup' (false) (bnc #431259).
+- Using two default desktops, one for inst_scenarios, another
+  one (default) while inst_scenarios not used (bnc #431251,
+  bnc #431503).
+
+-------------------------------------------------------------------
+Wed Oct  1 13:45:08 CEST 2008 - locilka@suse.cz
+
+- Changing pattern "Documentation" to "documentation" (bnc #431218)
+
+-------------------------------------------------------------------
+Tue Sep 30 13:23:47 CEST 2008 - locilka@suse.cz
+
+- Replacing "networkmanager" proposal call with "general"
+  (bnc #430704).
+
+-------------------------------------------------------------------
+Mon Sep 29 15:22:08 CEST 2008 - locilka@suse.cz
+
+- Server scenarios work for i386, x86_64 archs only (bnc #430612).
+
+-------------------------------------------------------------------
+Mon Sep 29 15:21:37 CEST 2008 - kukuk@suse.de
+
+- Replaced Minimal+Xen with Dom0.
+- Removed xen_server from virtualization machine (bnc #429061).
+- Added "XEN" suffix to Virtualization Host.
+
+-------------------------------------------------------------------
+Mon Sep 29 13:38:13 CEST 2008 - locilka@suse.cz
+
+- Adding inst_lilo_convert to the update workflow (bnc #430579).
+
+-------------------------------------------------------------------
+Thu Sep 18 10:39:49 CEST 2008 - locilka@suse.cz
+
+- Definition of supported desktops added into SLES and SLED control
+  files, added also default_desktop definition (bnc #427061).
+
+-------------------------------------------------------------------
+Wed Sep 10 17:29:43 CEST 2008 - locilka@suse.cz
+
+- <execute> tag must mention the exact name of a script to call
+  (bnc #425198).
+
+-------------------------------------------------------------------
+Mon Sep  8 12:10:27 CEST 2008 - locilka@suse.cz
+
+- Fixed partitioning sizes (G -> GB) (aschnell)
+- Added more modules to the 'clone' section (ug).
+
+-------------------------------------------------------------------
+Wed Sep  3 10:41:20 CEST 2008 - locilka@suse.cz
+
+- Updated control files to call inst_prepareprogress to
+  "Provide consistent progress during installation" (FATE #303860).
+- All 'inst_proposal' calls changed to use the new 'execute'
+  feature to have unique 'name's (needed for merging add-on control
+  files).
+
+-------------------------------------------------------------------
+Tue Aug 19 16:41:24 CEST 2008 - kukuk@suse.de
+
+- Add patterns for the differnt workloads.
+
+-------------------------------------------------------------------
+Fri Aug 15 11:06:42 CEST 2008 - locilka@suse.cz
+
+- Added new globals->write_hostname_to_hosts control file option
+  to configure the default for 127.0.0.2 issue (FATE #303875).
+
+-------------------------------------------------------------------
+Tue Aug 12 12:48:43 CEST 2008 - locilka@suse.cz
+
+- Configuration of files that will be imported from previous
+  installation has been moved to control file (FATE #305019).
+
+-------------------------------------------------------------------
+Thu Aug  7 16:46:31 CEST 2008 - locilka@suse.cz
+
+- Added enable_kdump variable that defines the default value
+  whether kdump is proposed to be enabled (FATE: #303893).
+- Calling reiplauto client after rpmcopy (on s390) (FATE #304940).
+- Added server scenarios definitions (FATE #304373).
+
+-------------------------------------------------------------------
+Thu Jul 24 14:46:24 CEST 2008 - locilka@suse.cz
+
+- Adapted to features added in 11.0
+
+-------------------------------------------------------------------
+Thu Dec 13 15:07:37 CET 2007 - locilka@suse.cz
+
+- Added a possibility to stop and disable the ZMD service in the
+  last (congratulate) dialog of installation (FATE #302495).
+- Adjusted the inst_congratulate module arguments
+  'show_zmd_turnoff_checkbox' (true) and
+  'zmd_turnoff_default_state' (false, S/390 and S/390x true).
+
+-------------------------------------------------------------------
+Wed Sep  5 13:33:38 CEST 2007 - jsrain@suse.cz
+
+- removed inst_fam (#307378)
+
+-------------------------------------------------------------------
+Mon Oct 16 09:20:12 CEST 2006 - locilka@suse.cz
+
+- Root Password dialog moved before Hostname and Domain Name
+  (#208032).
+- new inst_extrasources.ycp client - add extra installation sources
+  during installation (in 2nd stage, after online update)
+  (fate #100168, #300910) (lslezak)
+
+-------------------------------------------------------------------
+Fri May  5 14:35:56 CEST 2006 - jsrain@suse.cz
+
+- added congratulate text to the control file (#170881)
+
+-------------------------------------------------------------------
+Tue Apr 25 23:05:08 CEST 2006 - jsrain@suse.cz
+
+- fixed service proposal in SLES control file (#159771)
+
+-------------------------------------------------------------------
+Thu Apr 20 18:40:00 CEST 2006 - mvidner@suse.cz
+
+- added globals/disable_register_w3m (#167255, jdsn)
+
+-------------------------------------------------------------------
+Fri Apr 14 22:44:09 CEST 2006 - jsrain@suse.cz
+
+- removed update system selection from update proposal (#165832)
+- added add-on products to installation/update proposals
+
+-------------------------------------------------------------------
+Thu Apr 13 23:42:55 CEST 2006 - jsrain@suse.cz
+
+- changed control files according to (#165509
+
+-------------------------------------------------------------------
+Wed Apr 12 13:34:38 CEST 2006 - mvidner@suse.cz
+
+- Control files updated for manual online update run (#165503).
+
+-------------------------------------------------------------------
+Tue Apr 11 11:36:29 CEST 2006 - fehr@suse.de
+
+- use updated version of control.SLES.xml from yast2 svn to enable
+  evms again
+
+-------------------------------------------------------------------
+Wed Apr  5 01:10:03 CEST 2006 - jsrain@suse.cz
+
+- removed register section
+
+-------------------------------------------------------------------
+Wed Mar 29 17:24:57 CEST 2006 - mvidner@suse.cz
+
+- Added register/display_register_forcereg (jdsn).
+
+-------------------------------------------------------------------
+Thu Mar 23 19:22:22 CET 2006 - mvidner@suse.cz
+
+- Added register/enable_register_{hwdata,optional}.
+
+-------------------------------------------------------------------
+Wed Mar 22 11:23:59 CET 2006 - kukuk@suse.de
+
+- Readd changes for keyboard and software section in proposal
+- Base selection is "default"
+
+-------------------------------------------------------------------
+Thu Mar 16 23:54:06 CET 2006 - jsrain@suse.cz
+
+- increase maximal size of root fs to 20 Gig (#158608)
+- added zFCP and DASD modules to list of modules to be cloned after
+  SLES installation (#153378)
+
+-------------------------------------------------------------------
+Tue Mar 14 19:45:45 CET 2006 - jsrain@suse.cz
+
+- changed title for registration in installation workflow
+
+-------------------------------------------------------------------
+Tue Mar 14 17:14:56 CET 2006 - kukuk@suse.de
+
+- Add keyboard section to installation proposal Overview and
+  make software selection the long version.
+
+-------------------------------------------------------------------
+Thu Mar  9 18:13:40 CET 2006 - mvidner@suse.cz
+
+- added network/startmode=auto (#156388).
+
+-------------------------------------------------------------------
+Tue Mar  7 22:41:09 CET 2006 - jsrain@suse.cz
+
+- adapted for online update (jdsn)
+
+-------------------------------------------------------------------
+Wed Mar  1 23:44:46 CET 2006 - jsrain@suse.cz
+
+- added suse_resgister to installation workflow
+
+-------------------------------------------------------------------
+Sat Feb 18 00:08:21 CET 2006 - jsrain@suse.cz
+
+- integrated add-on product installation
+
+-------------------------------------------------------------------
+Tue Feb  7 18:24:05 CET 2006 - mvidner@suse.cz
+
+- disable proposal with separate /home for SLES (fehr)
+
+-------------------------------------------------------------------
+Mon Jan 30 17:40:13 CET 2006 - jsrain@suse.cz
+
+- removed desktop selection
+
+-------------------------------------------------------------------
+Wed Jan 25 21:41:37 CET 2006 - mls@suse.de
+
+- converted neededforbuild to BuildRequires
+
+-------------------------------------------------------------------
+Mon Jan 23 13:52:02 CET 2006 - jsrain@suse.cz
+
+- Added networkmanager_proposal to the network proposal
+- Generating autoinstallation profile is on by default (#144101)
+
+-------------------------------------------------------------------
+Fri Jan 20 08:04:18 CET 2006 - jsrain@suse.cz
+
+- show the service proposal (#143339)
+
+-------------------------------------------------------------------
+Fri Jan 13 14:18:14 CET 2006 - jsrain@suse.cz
+
+- run the desktop dialog (#142771)
+
+-------------------------------------------------------------------
+Mon Jan  9 17:30:48 CET 2006 - jsrain@suse.cz
+
+- UI mode set to expert
+
+-------------------------------------------------------------------
+Thu Jan  5 17:21:49 CET 2006 - jsrain@suse.cz
+
+- integrated iSCSI installation
+- moved DASD and zFCP disks activation before installation mode
+  selection
+
+-------------------------------------------------------------------
+Fri Dec 16 16:38:19 CET 2005 - jsrain@suse.cz
+
+- added list of modules to offer to clone after the end of
+  installation
+
+-------------------------------------------------------------------
+Fri Dec  2 16:23:08 CET 2005 - jsrain@suse.cz
+
+- added control file variables network_manager_is_default,
+  force_static_ip (mvidner)
+
+-------------------------------------------------------------------
+Mon Nov 28 12:52:00 CET 2005 - jsrain@suse.cz
+
+- adjust default desktop as GNOME (#132491)
+
+-------------------------------------------------------------------
+Tue Nov 22 13:04:18 CET 2005 - jsrain@suse.cz
+
+- added default desktop to control file
+
+-------------------------------------------------------------------
+Fri May 21 14:23:32 CEST 2004 - nashif@suse.de
+
+- Shutdown network before autoyast system configuration (#40981)
+
+-------------------------------------------------------------------
+Fri Apr 30 23:50:16 CEST 2004 - nashif@suse.de
+
+- readded vnc remote proposal to SLES workflow (bug #31023)
+
+-------------------------------------------------------------------
+Tue Apr 27 16:12:42 CEST 2004 - nashif@suse.de
+
+- ca proposal is called ca_mgm (arvin@suse.de)
+
+-------------------------------------------------------------------
+Fri Apr 16 14:48:40 CEST 2004 - nashif@suse.de
+
+- removed keyboard proposal from update proposal for the update
+  in the running system (bug #37817) 
+- add "service" proposal to SLES installation
+- removed remote proposal 
+
+-------------------------------------------------------------------
+Wed Apr  7 00:39:24 CEST 2004 - nashif@suse.de
+
+- Added option for update/upgrade (set to true on SLES) (bug #38486)
+- (arvin) symmetricalized calls to inst_netsetup (bug #37763)
+
+-------------------------------------------------------------------
+Thu Apr  1 05:20:40 CEST 2004 - nashif@suse.de
+
+- remove all the comments and noise
+- remove internal and testing workflows
+
+-------------------------------------------------------------------
+Wed Mar 31 19:08:12 CEST 2004 - nashif@suse.de
+
+- disable desktop variable on SLES (use_desktop_scheduler set to 
+  false)
+
+-------------------------------------------------------------------
+Thu Mar 25 03:32:53 CET 2004 - nashif@suse.de
+
+- Initial release
+  * dont delete rpms 
+  * enable evms
+  * disable autologin
+
