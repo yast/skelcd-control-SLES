@@ -34,7 +34,7 @@ BuildRequires:  libxml2-tools
 BuildRequires:  yast2-installation-control
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.0
+Version:        12.0.1
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
