@@ -422,13 +422,10 @@ Please visit us at http://www.suse.com/.
             <unique_id>live_inst_initial</unique_id>
             <enable_skip>no</enable_skip>
             <proposal_modules config:type="list">
-                <proposal_module>hwinfo</proposal_module>
-                <proposal_module>partitions</proposal_module>
                 <proposal_module>bootloader</proposal_module>
-                <proposal_module>country_simple</proposal_module>
-                <proposal_module>timezone</proposal_module>
-                <proposal_module>users</proposal_module>
                 <proposal_module>default_target</proposal_module>
+                <proposal_module>hwinfo</proposal_module>
+                <proposal_module>users</proposal_module>
             </proposal_modules>
         </proposal>
 
@@ -733,6 +730,10 @@ Please visit us at http://www.suse.com/.
             <stage>initial</stage>
             <modules config:type="list">
                 <module>
+                    <label>Network Autosetup</label>
+                    <name>setup_dhcp</name>
+                </module>
+                <module>
                     <label>Welcome</label>
                     <name>complex_welcome</name>
                     <enable_back>no</enable_back>
@@ -743,12 +744,8 @@ Please visit us at http://www.suse.com/.
                     <retranslate config:type="boolean">true</retranslate>
                 </module>
                 <module>
-                    <label>Time Zone</label>
-                    <name>timezone</name>
-                    <arguments>
-                        <first_run>yes</first_run>
-                    </arguments>
-                    <enable_back>yes</enable_back>
+                    <label>Network Activation</label>
+                    <name>lan</name>
                 </module>
                 <module>
                     <label>Disk</label>
@@ -757,6 +754,16 @@ Please visit us at http://www.suse.com/.
                     <enable_next>yes</enable_next>
                 </module>
                 <module>
+                    <label>Time Zone</label>
+                    <name>timezone</name>
+                    <arguments>
+                        <first_run>yes</first_run>
+                    </arguments>
+                    <enable_back>yes</enable_back>
+                </module>
+<!--
+FIXME: root pw + registration
+                <module>
                     <label>User Settings</label>
                     <name>user_first</name>
                 </module>
@@ -764,6 +771,7 @@ Please visit us at http://www.suse.com/.
                     <label>User Settings</label>
                     <name>root_first</name>
                 </module>
+-->
                 <module>
                     <label>Installation Settings</label>
                     <name>inst_live_pre-proposal</name>
@@ -780,12 +788,6 @@ Please visit us at http://www.suse.com/.
                 </module>
                 <module>
                     <label>Perform Installation</label>
-                    <name>inst_do_resize</name>
-                    <update config:type="boolean">false</update>
-                    <archs>i386,x86_64,ia64</archs>
-                </module>
-                <module>
-                    <label>Perform Installation</label>
                     <name>inst_prepdisk</name>
                 </module>
                 <module>
@@ -796,6 +798,10 @@ Please visit us at http://www.suse.com/.
                     <label>Perform Installation</label>
                     <name>inst_live_doit</name>
                     <enable_next>no</enable_next>
+                    <enable_back>no</enable_back>
+                </module>
+                <module>
+                    <name>live_cleanup</name>
                     <enable_back>no</enable_back>
                 </module>
                 <module>
@@ -1008,39 +1014,6 @@ Please visit us at http://www.suse.com/.
                     </arguments>
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
-                </module>
-
-            </modules>
-        </workflow>
-
-        <!-- TODO FIXME: fix the live installer to not require the 2nd stage -->
-        <workflow>
-            <stage>continue</stage>
-            <mode>live_installation</mode>
-            <defaults>
-                <enable_back>yes</enable_back>
-                <enable_next>yes</enable_next>
-                <archs>all</archs>
-            </defaults>
-            <modules config:type="list">
-                <module>
-                    <heading>yes</heading>
-                    <label>Configuration</label>
-                </module>
-                <module>
-                    <label>Automatic Configuration</label>
-                    <name>automatic_configuration</name>
-                    <enable_back>no</enable_back>
-                    <enable_next>no</enable_next>
-                </module>
-                <module>
-                    <name>user_non_interactive</name>
-                    <!-- BNC #401319, define client to call explicitly -->
-                    <execute>inst_user</execute>
-                </module>
-                <module>
-                    <name>live_cleanup</name>
-                    <enable_back>no</enable_back>
                 </module>
 
             </modules>
