@@ -309,7 +309,7 @@ Please visit us at http://www.suse.com/.
             <proposal_modules config:type="list">
                 <proposal_module>
                     <name>hwinfo</name>
-                    <presentation_order>10</presentation_order>
+                    <presentation_order>90</presentation_order>
                 </proposal_module>
                 <proposal_module>
                     <name>bootloader</name>
@@ -343,7 +343,7 @@ Please visit us at http://www.suse.com/.
             <proposal_modules config:type="list">
                 <proposal_module>
                     <name>hwinfo</name>
-                    <presentation_order>10</presentation_order>
+                    <presentation_order>90</presentation_order>
                 </proposal_module>
                 <proposal_module>
                     <name>keyboard</name>
@@ -667,6 +667,9 @@ Please visit us at http://www.suse.com/.
                     </arguments>
                 </module>
                 <module>
+                    <name>root_first</name>
+                </module>
+                <module>
                     <heading>yes</heading>
                     <label>Installation</label>
                 </module>
@@ -761,17 +764,12 @@ Please visit us at http://www.suse.com/.
                     </arguments>
                     <enable_back>yes</enable_back>
                 </module>
-<!--
-FIXME: root pw + registration
                 <module>
-                    <label>User Settings</label>
-                    <name>user_first</name>
+                    <name>scc</name>
                 </module>
                 <module>
-                    <label>User Settings</label>
                     <name>root_first</name>
                 </module>
--->
                 <module>
                     <label>Installation Settings</label>
                     <name>inst_live_pre-proposal</name>
