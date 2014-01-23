@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Jan 23 16:54:48 UTC 2014 - lslezak@suse.cz
+
+- added missing root password dialog
+- added registration and root password to live installation
+- move "system" item in the installation proposal to bottom
+- 12.0.1
+
+-------------------------------------------------------------------
 Thu Jan 23 13:33:44 UTC 2014 - jsrain@suse.cz
 
 - adjusted live workflow according to new installer (no 2nd stage)
