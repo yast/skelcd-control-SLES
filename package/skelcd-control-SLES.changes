@@ -1,8 +1,22 @@
 -------------------------------------------------------------------
-Wed Jan 22 15:15:10 UTC 2014 - jreidinger@suse.com
+Fri Jan 24 15:15:10 UTC 2014 - jreidinger@suse.com
 
-- Add firewall proposal from opensuse
-- version 12.0.1
+- Add firewall proposal same as in opensuse
+- 12.0.2
+
+-------------------------------------------------------------------
+Thu Jan 23 16:54:48 UTC 2014 - lslezak@suse.cz
+
+- added missing root password dialog
+- added registration and root password to live installation
+- move "system" item in the installation proposal to bottom
+- 12.0.1
+
+-------------------------------------------------------------------
+Thu Jan 23 13:33:44 UTC 2014 - jsrain@suse.cz
+
+- adjusted live workflow according to new installer (no 2nd stage)
+  (fate#316202)
 
 -------------------------------------------------------------------
 Fri Jan 17 14:22:08 UTC 2014 - lslezak@suse.cz
