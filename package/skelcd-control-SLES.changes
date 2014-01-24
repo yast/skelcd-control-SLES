@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Jan 24 17:44:48 UTC 2014 - lslezak@suse.cz
+
+- added yast2-registration to Requires to add it into SLES inst-sys
+- 12.0.3
+
+-------------------------------------------------------------------
 Fri Jan 24 15:15:10 UTC 2014 - jreidinger@suse.com
 
 - Add firewall proposal same as in opensuse
