@@ -32,9 +32,57 @@ Name:           skelcd-control-SLES
 BuildRequires:  libxml2-tools
 # RNG validation schema
 BuildRequires:  yast2-installation-control
+
+
+######################################################################
+#
+# Here is the list of Yast packages which are needed in the
+# installation system (inst-sys) for the Yast installer
+#
+
+# SLES specific Yast packages needed in the inst-sys
+# to provide the functionality needed by this control file
+Requires:       yast2-registration
+Requires:       yast2-theme-SLE
+
+# Generic Yast packages needed for the installer
+Requires:       autoyast2-installation
+Requires:       yast2-add-on
+Requires:       yast2-fcoe-client
+Requires:       yast2-iscsi-client
+Requires:       yast2-kdump
+Requires:       yast2-multipath
+Requires:       yast2-network
+Requires:       yast2-nfs-client
+Requires:       yast2-ntp-client
+Requires:       yast2-proxy
+Requires:       yast2-services-manager
+Requires:       yast2-slp
+Requires:       yast2-trans-allpacks
+Requires:       yast2-trans-stats
+Requires:       yast2-tune
+Requires:       yast2-update
+Requires:       yast2-users
+Requires:       yast2-x11
+# this is the default theme
+Requires:       yast2-theme-openSUSE-Oxygen
+
+# Architecture specific packages
+#
+%ifarch s390 s390x
+BuildRequires:  yast2-reipl
+%endif
+
+%ifarch %ix86 x86_64
+BuildRequires:  yast2-vm
+%endif
+
+#
+######################################################################
+
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.2
+Version:        12.0.3
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
