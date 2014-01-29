@@ -48,6 +48,8 @@ Requires:       yast2-theme-SLE
 # Generic Yast packages needed for the installer
 Requires:       autoyast2-installation
 Requires:       yast2-add-on
+Requires:       yast2-buildtools
+Requires:       yast2-devtools
 Requires:       yast2-fcoe-client
 Requires:       yast2-iscsi-client
 Requires:       yast2-kdump
@@ -66,6 +68,7 @@ Requires:       yast2-users
 Requires:       yast2-x11
 # this is the default theme
 Requires:       yast2-theme-openSUSE-Oxygen
+Requires:       yast2-qt-branding-openSUSE
 
 # Architecture specific packages
 #
