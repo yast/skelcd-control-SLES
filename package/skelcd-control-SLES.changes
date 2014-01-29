@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jan 29 16:43:37 CET 2014 - fcrozat@suse.com
+
+- ensure gnome classic mode is used by default
+- 12.0.6
+
+-------------------------------------------------------------------
 Wed Jan 29 13:50:50 UTC 2014 - lslezak@suse.cz
 
 - removed openSUSE theme dependency
