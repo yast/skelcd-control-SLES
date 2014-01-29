@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jan 29 11:47:48 UTC 2014 - lslezak@suse.cz
+
+- install LICENSE (to pass the build service check)
+- 12.0.4
+
+-------------------------------------------------------------------
 Fri Jan 24 17:44:48 UTC 2014 - lslezak@suse.cz
 
 - added yast2-registration to Requires to add it into SLES inst-sys
