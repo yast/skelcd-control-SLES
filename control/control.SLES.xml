@@ -677,6 +677,9 @@ Please visit us at http://www.suse.com/.
                     </arguments>
                 </module>
                 <module>
+                    <name>user_first</name>
+                </module>
+                <module>
                     <name>root_first</name>
                 </module>
                 <module>
