@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Fri Jan 31 12:47:02 UTC 2014 - lslezak@suse.cz
+
+- create a non-root user at installation (bnc#861079)
+- fixed some dependencies (BuildRequires -> Requires)
+- removed yast2-trans-allpacks dependency
+- 12.0.7
+
+-------------------------------------------------------------------
 Wed Jan 29 16:43:37 CET 2014 - fcrozat@suse.com
 
 - ensure gnome classic mode is used by default
