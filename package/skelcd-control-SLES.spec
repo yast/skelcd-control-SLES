@@ -60,7 +60,6 @@ Requires:       yast2-ntp-client
 Requires:       yast2-proxy
 Requires:       yast2-services-manager
 Requires:       yast2-slp
-Requires:       yast2-trans-allpacks
 Requires:       yast2-trans-stats
 Requires:       yast2-tune
 Requires:       yast2-update
@@ -70,11 +69,11 @@ Requires:       yast2-x11
 # Architecture specific packages
 #
 %ifarch s390 s390x
-BuildRequires:  yast2-reipl
+Requires:  yast2-reipl
 %endif
 
 %ifarch %ix86 x86_64
-BuildRequires:  yast2-vm
+Requires:  yast2-vm
 %endif
 
 #
