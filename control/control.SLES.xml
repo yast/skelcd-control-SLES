@@ -152,8 +152,6 @@ textdomain="control"
                 <label_id>dummy_desktop</label_id>
                 <logon>gdm</logon>
                 <cursor>DMZ</cursor>
-                <!-- package has to be installed or selected -->
-                <packages>gdm gnome-shell-classic</packages>
                 <order config:type="integer">1</order>
                 <patterns>base x11 gnome apparmor print_server 32bit 64bit x86 documentation</patterns>
                 <icon>pattern-gnome</icon>

@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Feb 17 17:36:52 CET 2014 - locilka@suse.com
+
+- Removed gdm and gnome-shell-classic packages from required
+  packages as they are recommended by patterns (bnc#862756)
+- 12.0.9
+
+-------------------------------------------------------------------
 Mon Feb 17 16:01:18 CET 2014 - locilka@suse.com
 
 - Removed all unused desktops (bnc#864295)
