@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Feb 17 16:01:18 CET 2014 - locilka@suse.com
+
+- Removed all unused desktops (bnc#864295)
+- 12.0.8
+
+-------------------------------------------------------------------
 Fri Jan 31 12:47:02 UTC 2014 - lslezak@suse.cz
 
 - create a non-root user at installation (bnc#861079)
