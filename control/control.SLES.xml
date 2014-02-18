@@ -143,20 +143,35 @@ textdomain="control"
 
         <selection_type config:type="symbol">auto</selection_type>
 
-        <!-- There is only one desktop definition now: the default one (bnc#864295) -->
+        <!--
+          Only two desktops are supported: gnome and icewm (bnc#862756),
+          but there is no desktop selection dialog. Another desktop has to be
+          selected manually in software selection dialog.
+        -->
         <supported_desktops config:type="list">
-            <!-- Used for non-i386/non-x86_64 machines -->
             <one_supported_desktop>
                 <name>gnome</name>
                 <desktop>gnome-classic</desktop>
                 <label_id>dummy_desktop</label_id>
                 <logon>gdm</logon>
                 <cursor>DMZ</cursor>
-                <!-- Intentionally empty list, requirements are handled by patterns -->
-                <packages></packages>
+                <!-- desktop_finish needs this to find out that gnome has been selected by user -->
+                <packages>gnome-shell</packages>
                 <order config:type="integer">1</order>
                 <patterns>base x11 gnome apparmor print_server 32bit 64bit x86 documentation</patterns>
                 <icon>pattern-gnome</icon>
+            </one_supported_desktop>
+            <one_supported_desktop>
+                <name>icewm</name>
+                <desktop>icewm</desktop>
+                <label_id>dummy_desktop</label_id>
+                <logon>gdm</logon>
+                <cursor>DMZ</cursor>
+                <!-- desktop_finish needs this to find out that icewm has been selected by user -->
+                <packages>icewm</packages>
+                <order config:type="integer">2</order>
+                <patterns>base x11 apparmor print_server 32bit 64bit x86 documentation</patterns>
+                <icon>yast-x11</icon>
             </one_supported_desktop>
         </supported_desktops>
 

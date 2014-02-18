@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue Feb 18 15:55:43 CET 2014 - locilka@suse.com
+
+- Added icewm as another supported desktop
+- Added gnome-shell package to be required by gnome desktop
+- Both (bnc#862756)
+- 12.0.10
+
+-------------------------------------------------------------------
 Mon Feb 17 17:36:52 CET 2014 - locilka@suse.com
 
 - Removed gdm and gnome-shell-classic packages from required
