@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Feb 20 12:51:47 UTC 2014 - jreidinger@suse.com
+
+- remove suseconfig script from autoyast work-flow as it no longer
+  exists (BNC#864860)
+- 12.0.11
+
+-------------------------------------------------------------------
 Tue Feb 18 15:55:43 CET 2014 - locilka@suse.com
 
 - Added icewm as another supported desktop
