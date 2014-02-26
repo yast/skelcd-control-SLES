@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Wed Feb 26 09:17:39 UTC 2014 - jreidinger@suse.com
+
+- add cio ignore proposal for s390 (FATE#315586)
+- dependency on recent yast2-installation including cio ignore
+  proposal client
+- 12.0.12
+
+-------------------------------------------------------------------
 Thu Feb 20 12:51:47 UTC 2014 - jreidinger@suse.com
 
 - remove suseconfig script from autoyast work-flow as it no longer
