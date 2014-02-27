@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Feb 27 07:03:47 UTC 2014 - mfilka@suse.com
+
+- added reference to linuxrc network configuration client
+- 12.0.13
+
+-------------------------------------------------------------------
 Wed Feb 26 09:17:39 UTC 2014 - jreidinger@suse.com
 
 - add cio ignore proposal for s390 (FATE#315586)
