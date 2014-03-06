@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Mar  6 14:30:13 CET 2014 - locilka@suse.com
+
+- Removed x86 pattern from default desktop selection (bnc#866724)
+- Fixed packages to identify a selected desktop - using package
+  that defines the gnome pattern (bnc#866724)
+- 12.0.14
+
+-------------------------------------------------------------------
 Thu Feb 27 07:03:47 UTC 2014 - mfilka@suse.com
 
 - added reference to linuxrc network configuration client
