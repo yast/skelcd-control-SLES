@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Mar 26 13:38:27 UTC 2014 - lslezak@suse.cz
+
+- upgrade: removed checkmedia step (moved to boot menu)
+- upgrade: added registration step (bnc#869651)
+- 12.0.16
+
+-------------------------------------------------------------------
 Tue Mar 18 18:14:09 CET 2014 - aschnell@suse.de
 
 - set btrfs_increase_percentage to 300 (bnc#868246)
