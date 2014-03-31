@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Mar 31 13:51:29 UTC 2014 - jreidinger@suse.com
+
+- have complete autoyast2 in inst-sys otherwise cloning in first
+  stage won't work (bnc#869175)
+- 12.0.17
+
+-------------------------------------------------------------------
 Wed Mar 26 13:38:27 UTC 2014 - lslezak@suse.cz
 
 - upgrade: removed checkmedia step (moved to boot menu)
