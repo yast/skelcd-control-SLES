@@ -46,7 +46,7 @@ Requires:       yast2-registration
 Requires:       yast2-theme-SLE
 
 # Generic Yast packages needed for the installer
-Requires:       autoyast2-installation
+Requires:       autoyast2
 Requires:       yast2-add-on
 Requires:       yast2-buildtools
 Requires:       yast2-devtools
@@ -82,7 +82,7 @@ Requires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.16
+Version:        12.0.17
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
