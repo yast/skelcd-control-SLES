@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 Tue Apr  1 15:18:33 CEST 2014 - locilka@suse.com
 
-- Removed second stage definition for upgrade
+- Removed second stage definition for upgrade (bnc#870437)
 - 12.0.19
 
 -------------------------------------------------------------------
