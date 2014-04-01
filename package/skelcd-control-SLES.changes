@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Mar 31 16:55:03 CEST 2014 - fcrozat@suse.com
+
+- "GNOME SLE Classic" is known as "sle-classic" now
+- 12.0.18
+
+-------------------------------------------------------------------
 Mon Mar 31 13:51:29 UTC 2014 - jreidinger@suse.com
 
 - have complete autoyast2 in inst-sys otherwise cloning in first
