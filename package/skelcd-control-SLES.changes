@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Apr  1 16:06:21 CEST 2014 - locilka@suse.com
+
+- Adapted software upgrade behavior to SLES 12 (bnc#871174)
+- 12.0.20
+
+-------------------------------------------------------------------
 Tue Apr  1 15:18:33 CEST 2014 - locilka@suse.com
 
 - Removed second stage definition for upgrade (bnc#870437)
