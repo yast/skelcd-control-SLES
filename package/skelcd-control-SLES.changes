@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Apr  1 15:18:33 CEST 2014 - locilka@suse.com
+
+- Removed second stage definition for upgrade
+- 12.0.19
+
+-------------------------------------------------------------------
 Mon Mar 31 16:55:03 CEST 2014 - fcrozat@suse.com
 
 - "GNOME SLE Classic" is known as "sle-classic" now
