@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Apr  1 14:31:30 UTC 2014 - lslezak@suse.cz
+
+- fixed product regexp to allow pattern based upgrade from SLES11
+  (bnc#871174)
+- 12.0.20
+
+-------------------------------------------------------------------
 Tue Apr  1 15:18:33 CEST 2014 - locilka@suse.com
 
 - Removed second stage definition for upgrade (bnc#870437)
