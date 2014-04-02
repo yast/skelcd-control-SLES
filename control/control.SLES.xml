@@ -13,7 +13,7 @@ textdomain="control"
         <enable_autologin config:type="boolean">false</enable_autologin>
         <enable_firewall config:type="boolean">true</enable_firewall>
         <firewall_enable_ssh config:type="boolean">false</firewall_enable_ssh>
-        <enable_sshd config:type="boolean">true</firewall_enable_ssh>
+        <enable_sshd config:type="boolean">true</enable_sshd>
 
         <!-- FATE #303875, see /etc/sysconfig/network/dhcp:WRITE_HOSTNAME_TO_HOSTS -->
         <write_hostname_to_hosts config:type="boolean">false</write_hostname_to_hosts>
