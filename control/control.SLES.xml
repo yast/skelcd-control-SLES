@@ -839,6 +839,14 @@ Please visit us at http://www.suse.com/.
             <stage>initial</stage>
             <modules config:type="list">
                 <module>
+                    <label>Load Linuxrc Network Configuration</label>
+                    <name>install_inf</name>
+                </module>
+                <module>
+                    <label>Network Autosetup</label>
+                    <name>setup_dhcp</name>
+                </module>
+                <module>
                     <name>complex_welcome</name>
                     <label>Welcome</label>
                     <enable_back>no</enable_back>
@@ -847,6 +855,12 @@ Please visit us at http://www.suse.com/.
                         <first_run>yes</first_run>
                     </arguments>
                     <retranslate config:type="boolean">true</retranslate>
+                </module>
+                <module>
+                    <label>Network Activation</label>
+                    <name>lan</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
                 </module>
                 <module>
                     <label>Disk Activation</label>
