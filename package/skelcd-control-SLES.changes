@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Apr  3 08:51:07 CEST 2014 - locilka@suse.com
+
+- Adapted software upgrade behavior to SLES 12 (bnc#871174)
+- 12.0.22
+
+-------------------------------------------------------------------
 Wed Apr  2 09:20:44 UTC 2014 - jreidinger@suse.com
 
 - enable sshd by default on SLES (bnc#865056)
