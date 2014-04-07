@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Apr  4 12:58:07 UTC 2014 - jreidinger@suse.com
+
+- clean up bootloader update with old obsolete stuff (bnc#872081)
+- 12.0.24
+
+-------------------------------------------------------------------
 Thu Apr  3 12:20:33 UTC 2014 - jreidinger@suse.com
 
 - setup network for upgrade workflow (bnc#871178)
