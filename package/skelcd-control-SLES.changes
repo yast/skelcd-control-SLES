@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
 Fri Apr  4 12:58:07 UTC 2014 - jreidinger@suse.com
 
-- clean up bootloader update with old obsolete stuff (bnc#872081)
+- system upgrade: don't call obsolete bootloader code for lilo and
+  hdX (bnc#872081)
 - 12.0.24
 
 -------------------------------------------------------------------
