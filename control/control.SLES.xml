@@ -462,7 +462,6 @@ Please visit us at http://www.suse.com/.
 
             <proposal_modules config:type="list">
                 <proposal_module>hwinfo</proposal_module>
-                <proposal_module>media</proposal_module>
                 <proposal_module>update</proposal_module>
                 <proposal_module>add-on</proposal_module>
                 <proposal_module>packages</proposal_module>

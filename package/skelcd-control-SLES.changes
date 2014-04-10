@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Apr 10 15:27:24 CEST 2014 - locilka@suse.com
+
+- Installation media removed from update proposal (bnc#869657)
+- 12.0.26
+
+-------------------------------------------------------------------
 Tue Apr  8 12:21:02 UTC 2014 - jreidinger@suse.com
 
 - system upgrade: propose new bootloader configuration due to
