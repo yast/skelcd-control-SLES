@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Apr 27 12:17:25 CEST 2014 - dvaleev@suse.com
+
+- Add POWER specific installation hook (bnc#871397)
+- 12.0.28
+
+-------------------------------------------------------------------
 Wed Apr 23 11:07:14 CEST 2014 - locilka@suse.com
 
 - Pattern 64bit has been removed from media (bnc#874740)
