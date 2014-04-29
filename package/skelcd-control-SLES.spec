@@ -77,6 +77,11 @@ Requires:  yast2-reipl
 Requires:  yast2-vm
 %endif
 
+#See bnc#871397
+%ifarch ppc64 ppc64le
+Requires:  yast2-prep-hook
+%endif
+
 #
 ######################################################################
 
