@@ -145,7 +145,7 @@ textdomain="control"
         <selection_type config:type="symbol">auto</selection_type>
 
         <!-- bnc#875350: Explicitly selecting these patterns by default -->
-        <default_patterns>base minimal</default_patterns>
+        <default_patterns>base Minimal</default_patterns>
 
         <!--
           Only two desktops are supported: gnome and icewm (bnc#862756),
