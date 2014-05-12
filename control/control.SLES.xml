@@ -668,6 +668,9 @@ Please visit us at http://www.suse.com/.
                     <enable_next>yes</enable_next>
                 </module>
                 <module>
+                    <name>download_release_notes</name>
+                </module>
+                 <module>
                     <label>Disk</label>
                     <name>disk_proposal</name>
                     <enable_back>yes</enable_back>
@@ -896,6 +899,9 @@ Please visit us at http://www.suse.com/.
                     <name>add-on</name>
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
+                </module>
+                <module>
+                    <name>download_release_notes</name>
                 </module>
                 <module>
                     <heading>yes</heading>
