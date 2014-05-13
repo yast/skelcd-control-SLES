@@ -1,8 +1,7 @@
 -------------------------------------------------------------------
 Tue May 13 13:07:27 UTC 2014 - jreidinger@suse.com
 
-- propose properly migrate to grub2 on s390 during upgrade
-  (bnc#877324)
+- Upgrade: Migrate to Grbu2 also on s390 (bnc#877324)
 - 12.0.31
 
 -------------------------------------------------------------------
