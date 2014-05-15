@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu May 15 14:27:21 CEST 2014 - locilka@suse.com
+
+- Added handling for upgrading default desktop using
+  software->upgrade->window_managers (bnc#874116)
+- 12.0.32
+
+-------------------------------------------------------------------
 Tue May 13 13:07:27 UTC 2014 - jreidinger@suse.com
 
 - Upgrade: Migrate to Grbu2 also on s390 (bnc#877324)
