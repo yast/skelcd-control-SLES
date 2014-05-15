@@ -186,6 +186,18 @@ textdomain="control"
 
         <!-- BNC #435479: Show support status in package details -->
         <display_support_status config:type="boolean">true</display_support_status>
+
+        <!-- handling software proposal during product upgrade -->
+        <upgrade>
+          <window_managers config:type="list">
+            <window_manager>
+              <sysconfig_wm>gnome</sysconfig_wm>
+              <check_packages>gnome-session</check_packages>
+              <install_patterns>gnome</install_patterns>
+              <install_packages>gdm gnome-shell-classic</install_packages>
+            </window_manager>
+          </window_managers>
+        </upgrade>
     </software>
 
     <partitioning>
