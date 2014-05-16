@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Fri May 16 16:02:46 CEST 2014 - locilka@suse.com
+
+- Default desktop pattern '32bit' that doesn't exist on some
+  architectures has been moved from desktops to
+  software->optional_default_patterns to prevent from being
+  reported as missing (bnc#876760)
+- 12.0.33
+
+-------------------------------------------------------------------
 Thu May 15 14:27:21 CEST 2014 - locilka@suse.com
 
 - Added handling for upgrading default desktop using

@@ -31,7 +31,7 @@ Name:           skelcd-control-SLES
 # xmllint (for validation)
 BuildRequires:  libxml2-tools
 # RNG validation schema
-BuildRequires:  yast2-installation-control >= 3.1.7
+BuildRequires:  yast2-installation-control >= 3.1.8
 
 
 ######################################################################
@@ -82,7 +82,7 @@ Requires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.32
+Version:        12.0.33
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
