@@ -146,6 +146,8 @@ textdomain="control"
 
         <!-- bnc#875350: Explicitly selecting these patterns by default -->
         <default_patterns>base Minimal</default_patterns>
+        <!-- bnc#876760: Explicitly selecting these (optional) patterns by default if they exist -->
+        <optional_default_patterns>32bit</optional_default_patterns>
 
         <!--
           Only two desktops are supported: gnome and icewm (bnc#862756),
@@ -165,9 +167,10 @@ textdomain="control"
                 -->
                 <packages>patterns-sles-gnome</packages>
                 <order config:type="integer">1</order>
-                <patterns>base x11 gnome apparmor print_server 32bit documentation</patterns>
+                <patterns>base x11 gnome apparmor print_server documentation</patterns>
                 <icon>pattern-gnome</icon>
             </one_supported_desktop>
+
             <one_supported_desktop>
                 <name>icewm</name>
                 <desktop>icewm</desktop>
@@ -177,7 +180,7 @@ textdomain="control"
                 <!-- desktop_finish needs this to find out that icewm has been selected by user manually -->
                 <packages>icewm</packages>
                 <order config:type="integer">2</order>
-                <patterns>base x11 apparmor print_server 32bit documentation</patterns>
+                <patterns>base x11 apparmor print_server documentation</patterns>
                 <icon>yast-x11</icon>
             </one_supported_desktop>
         </supported_desktops>
