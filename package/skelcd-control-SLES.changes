@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue May 20 08:44:34 UTC 2014 - jreidinger@suse.com
+
+- remove addon client as it is now run from scc client
+- 12.0.34
+
+-------------------------------------------------------------------
 Fri May 16 16:02:46 CEST 2014 - locilka@suse.com
 
 - Default desktop pattern '32bit' that doesn't exist on some

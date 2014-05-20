@@ -678,12 +678,6 @@ Please visit us at http://www.suse.com/.
                     <name>installation_options</name>
                 </module>
                 <module>
-                    <label>Add-On Products</label>
-                    <name>add-on</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
-                </module>
-                <module>
                     <name>download_release_notes</name>
                 </module>
                  <module>
@@ -909,12 +903,6 @@ Please visit us at http://www.suse.com/.
                 <module>
                     <name>scc</name>
                     <enable_back>yes</enable_back>
-                </module>
-                <module>
-                    <label>Add-On Products</label>
-                    <name>add-on</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
                 </module>
                 <module>
                     <name>download_release_notes</name>
