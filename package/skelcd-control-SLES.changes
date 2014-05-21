@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed May 21 10:49:04 UTC 2014 - jreidinger@suse.com
+
+- remove calling reipl_auto as it is called from bootloader
+  already
+- 12.0.35
+
+-------------------------------------------------------------------
 Tue May 20 08:44:34 UTC 2014 - jreidinger@suse.com
 
 - remove addon client as it is now run from scc client
