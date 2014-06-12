@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Jun 12 08:11:04 UTC 2014 - lslezak@suse.com
+
+- revert the addon removal, make the workflow less confusing
+  (bnc#880507)
+- 12.0.36
+
+-------------------------------------------------------------------
 Wed May 21 10:49:04 UTC 2014 - jreidinger@suse.com
 
 - remove calling reipl_auto as it is called from bootloader
