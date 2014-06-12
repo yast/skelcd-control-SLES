@@ -39,7 +39,7 @@ textdomain="control"
 
         <!-- Offer add-ons in the installation -->
         <show_addons config:type="boolean">true</show_addons>
-        <addons_default config:type="boolean">false</addons_default>
+        <addons_default config:type="boolean">true</addons_default>
 
         <!-- FATE #301937, Save /root content from the installation system to the installed system -->
         <save_instsys_content config:type="list">
@@ -678,6 +678,12 @@ Please visit us at http://www.suse.com/.
                     <name>installation_options</name>
                 </module>
                 <module>
+                    <label>Add-On Products</label>
+                    <name>add-on</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
+                <module>
                     <name>download_release_notes</name>
                 </module>
                  <module>
@@ -897,6 +903,12 @@ Please visit us at http://www.suse.com/.
                 <module>
                     <name>scc</name>
                     <enable_back>yes</enable_back>
+                </module>
+                <module>
+                    <label>Add-On Products</label>
+                    <name>add-on</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
                 </module>
                 <module>
                     <name>download_release_notes</name>
