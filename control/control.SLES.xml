@@ -1050,11 +1050,6 @@ Please visit us at http://www.suse.com/.
                 </module>
                 <module>
                     <label>Perform Update</label>
-                    <name>bl_preupdate</name>
-                    <execute>bootloader_preupdate</execute>
-                </module>
-                <module>
-                    <label>Perform Update</label>
                     <name>prepareprogress</name>
                 </module>
 
