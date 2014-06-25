@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jun 25 11:55:12 UTC 2014 - jreidinger@suse.com
+
+- return back proposal entry for autoyast clonning (bnc#881108) 
+- 12.0.39
+
+-------------------------------------------------------------------
 Tue Jun 24 14:33:03 UTC 2014 - jreidinger@suse.com
 
 - by default do not use os-prober on SLES (bnc#884007)
