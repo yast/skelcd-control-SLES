@@ -2,6 +2,7 @@
 Thu Jul  3 15:48:53 CEST 2014 - locilka@suse.com
 
 - Removed print_server pattern from patterns selected by default
+  (bnc#885685)
 - 12.0.40
 
 -------------------------------------------------------------------
