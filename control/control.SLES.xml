@@ -168,7 +168,7 @@ textdomain="control"
                 -->
                 <packages>patterns-sles-gnome</packages>
                 <order config:type="integer">1</order>
-                <patterns>base x11 gnome apparmor print_server documentation</patterns>
+                <patterns>base x11 gnome apparmor documentation</patterns>
                 <icon>pattern-gnome</icon>
             </one_supported_desktop>
 
@@ -181,7 +181,7 @@ textdomain="control"
                 <!-- desktop_finish needs this to find out that icewm has been selected by user manually -->
                 <packages>icewm</packages>
                 <order config:type="integer">2</order>
-                <patterns>base x11 apparmor print_server documentation</patterns>
+                <patterns>base x11 apparmor documentation</patterns>
                 <icon>yast-x11</icon>
             </one_supported_desktop>
         </supported_desktops>
