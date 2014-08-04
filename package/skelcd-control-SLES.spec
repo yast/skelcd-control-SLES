@@ -51,6 +51,8 @@ Requires:       yast2-add-on
 Requires:       yast2-buildtools
 Requires:       yast2-devtools
 Requires:       yast2-fcoe-client
+# For creating the AutoYast profile at the end of installation (bnc#887406)
+Requires:       yast2-firewall
 Requires:       yast2-installation >= 3.1.44
 Requires:       yast2-iscsi-client
 Requires:       yast2-kdump
@@ -82,7 +84,7 @@ Requires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.40
+Version:        12.0.41
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
