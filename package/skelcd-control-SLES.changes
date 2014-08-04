@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Mon Aug  4 16:20:11 CEST 2014 - locilka@suse.com
+
+- Added yast2-firewall to inst-sys dependencies - required for
+  creating the AutoYast profile at the end of installation
+  (bnc#887406)
+- 12.0.41
+
+-------------------------------------------------------------------
 Thu Jul  3 15:48:53 CEST 2014 - locilka@suse.com
 
 - Removed print_server pattern from patterns selected by default
