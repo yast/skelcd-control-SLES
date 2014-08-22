@@ -249,6 +249,7 @@ textdomain="control"
         <clone_module>bootloader</clone_module>
         <clone_module>kdump</clone_module>
         <clone_module>ntp-client</clone_module>
+        <clone_module>scc</clone_module>
     </clone_modules>
 
     <texts>
