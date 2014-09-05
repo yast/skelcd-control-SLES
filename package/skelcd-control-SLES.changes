@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Sep  5 14:55:12 CEST 2014 - fcrozat@suse.com
+
+- Update GNOME pattern name
+- 12.0.43
+
+-------------------------------------------------------------------
 Thu Aug 21 09:14:41 UTC 2014 - lslezak@suse.cz
 
 - clone registration settings to autoinst.xml (bnc#892449)
