@@ -166,9 +166,9 @@ textdomain="control"
                   desktop_finish needs this to find out that gnome has been selected by user
                   bnc#866724: packages mentioned here are not selected by desktop selection
                 -->
-                <packages>patterns-sles-gnome</packages>
+                <packages>patterns-sle-gnome-basic</packages>
                 <order config:type="integer">1</order>
-                <patterns>base x11 gnome apparmor documentation</patterns>
+                <patterns>base x11 gnome-basic apparmor documentation</patterns>
                 <icon>pattern-gnome</icon>
             </one_supported_desktop>
 
