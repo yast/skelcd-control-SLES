@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Sep 11 08:08:21 UTC 2014 - lslezak@suse.cz
+
+- update GNOME pattern name also in the desktop upgrade section
+  (bnc#896021)
+- 12.0.44
+
+-------------------------------------------------------------------
 Fri Sep  5 14:55:12 CEST 2014 - fcrozat@suse.com
 
 - Update GNOME pattern name
