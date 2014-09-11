@@ -72,11 +72,11 @@ Requires:       yast2-x11
 # Architecture specific packages
 #
 %ifarch s390 s390x
-Requires:  yast2-reipl >= 3.1.4
+Requires:       yast2-reipl >= 3.1.4
 %endif
 
 %ifarch %ix86 x86_64
-Requires:  yast2-vm
+Requires:       yast2-vm
 %endif
 
 #
@@ -84,7 +84,7 @@ Requires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.43
+Version:        12.0.44
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
