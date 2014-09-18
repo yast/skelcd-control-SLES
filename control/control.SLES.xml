@@ -413,10 +413,6 @@ Please visit us at http://www.suse.com/.
                     <name>software</name>
                     <presentation_order>35</presentation_order>
                 </proposal_module>
-                <proposal_module>
-                    <name>firewall_stage1</name>
-                    <presentation_order>52</presentation_order>
-                </proposal_module>
                 <!-- propose the default runlevel after software is selected, bnc #380141 -->
                 <proposal_module>
                     <name>default_target</name>
@@ -432,7 +428,6 @@ Please visit us at http://www.suse.com/.
                         <proposal_module>partitions</proposal_module>
                         <proposal_module>software</proposal_module>
                         <proposal_module>language_simple</proposal_module>
-                        <proposal_module>firewall_stage1</proposal_module>
                     </proposal_modules>
                 </proposal_tab>
 
