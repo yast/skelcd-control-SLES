@@ -148,6 +148,7 @@ textdomain="control"
         <selection_type config:type="symbol">auto</selection_type>
 
         <!-- bnc#875350: Explicitly selecting these patterns by default -->
+        <!-- For a list of patterns, see https://build.suse.de/package/view_file/SUSE:SLE-12-SP1:GA/patterns-sles/patterns-sles.spec?expand=1 -->
         <default_patterns>base Minimal</default_patterns>
         <!-- bnc#876760: Explicitly selecting these (optional) patterns by default if they exist -->
         <optional_default_patterns>32bit</optional_default_patterns>
@@ -226,6 +227,39 @@ textdomain="control"
         <startmode>auto</startmode>
     </network>
 
+    <!-- FATE#317481 -->
+    <system_roles config:type="list">
+      <system_role>
+        <!-- the id is a key for texts/$id/label
+                             and texts/$id_description/label below -->
+        <id>normal_role</id>
+        <!-- nothing is overlaid for the normal role -->
+      </system_role>
+
+      <system_role>
+        <id>kvm_host_role</id>
+
+        <!-- the rest is overlaid over the feature sections and values. -->
+        <partitioning>
+          <try_separate_home config:type="boolean">false</try_separate_home>
+        </partitioning>
+        <software>
+          <default_patterns>base Minimal kvm_server</default_patterns>
+        </software>
+      </system_role>
+
+      <system_role>
+        <id>xen_host_role</id>
+
+        <partitioning>
+          <try_separate_home config:type="boolean">false</try_separate_home>
+        </partitioning>
+        <software>
+          <default_patterns>base Minimal xen_server</default_patterns>
+        </software>
+      </system_role>
+    </system_roles>
+
     <clone_modules config:type="list">
         <clone_module>language</clone_module>
         <clone_module>keyboard</clone_module>
@@ -273,6 +307,25 @@ Please visit us at http://www.suse.com/.
 
         <!-- FATE #305583: Start CIMOM by default -->
         <service_sfcb><label>CIM Server</label></service_sfcb>
+
+        <normal_role>
+          <label>Default System</label>
+        </normal_role>
+        <normal_role_description>
+          <label>Nothing is modified compared to plain installation</label>
+        </normal_role_description>
+        <kvm_host_role>
+          <label>KVM Virtualization Host</label>
+        </kvm_host_role>
+        <kvm_host_role_description>
+          <label>A system with KVM pattern, no /home</label>
+        </kvm_host_role_description>
+        <xen_host_role>
+          <label>Xen Virtualization Host</label>
+        </xen_host_role>
+        <xen_host_role_description>
+          <label>A system with Xen pattern, no /home</label>
+        </xen_host_role_description>
     </texts>
 
     <proposals config:type="list">
@@ -698,6 +751,9 @@ Please visit us at http://www.suse.com/.
                 </module>
                 <module>
                     <name>download_release_notes</name>
+                </module>
+                <module>
+                    <name>system_role</name>
                 </module>
                  <module>
                     <label>Disk</label>

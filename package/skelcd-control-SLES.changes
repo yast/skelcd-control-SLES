@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Mar  7 14:01:46 UTC 2016 - mvidner@suse.com
+
+- Added a System Role step in the installation (FATE#317481).
+- 12.0.47
+
+-------------------------------------------------------------------
 Tue Sep 30 10:20:55 UTC 2014 - ancor@suse.com
 
 - Enabled "change hostname via DHCP" by default (bnc#870896)
