@@ -115,6 +115,9 @@ textdomain="control"
                 <packages>sblim-sfcb</packages>
             </service>
         </services_proposal>
+
+        <!-- FATE: #319716: Automatic Update of YaST at beginning of the installation -->
+        <!-- <self_update_url>http://update.opensuse.org/update.dud</self_update_url> -->
     </globals>
 
     <software>
