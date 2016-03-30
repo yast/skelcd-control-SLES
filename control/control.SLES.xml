@@ -729,6 +729,12 @@ Please visit us at http://www.suse.com/.
                     <enable_next>yes</enable_next>
                 </module>
                 <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
+                <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
                     <enable_back>yes</enable_back>
@@ -954,6 +960,12 @@ Please visit us at http://www.suse.com/.
                     <enable_next>yes</enable_next>
                 </module>
                 <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
+                <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
                     <enable_back>yes</enable_back>
@@ -1083,6 +1095,12 @@ Please visit us at http://www.suse.com/.
             <mode>autoupgrade</mode>
             <stage>initial</stage>
             <modules config:type="list">
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
                 <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
