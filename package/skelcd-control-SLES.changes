@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue Apr  5 07:39:21 UTC 2016 - igonzalezsosa@suse.com
+
+- Automatically update the installer in the initial stage of:
+  installation, update, autoinstallation and autoupgrade.
+  Not affected: live_installation. (FATE#319716).
+- 12.0.48
+
+-------------------------------------------------------------------
 Mon Mar  7 14:01:46 UTC 2016 - mvidner@suse.com
 
 - Added a System Role step in the installation (FATE#317481).
