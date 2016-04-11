@@ -734,6 +734,7 @@ Please visit us at http://www.suse.com/.
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
+		<!-- As soon as possible but after packager is initialized -->
                 <module>
                     <label>Installer Update</label>
                     <name>update_installer</name>
@@ -965,6 +966,7 @@ Please visit us at http://www.suse.com/.
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
+		<!-- As soon as possible but after packager is initialized -->
                 <module>
                     <label>Installer Update</label>
                     <name>update_installer</name>
@@ -1047,6 +1049,7 @@ Please visit us at http://www.suse.com/.
                     <archs>all</archs>
                     <retranslate config:type="boolean">true</retranslate>
                 </module>
+		<!-- As soon as possible but after packager is initialized -->
                 <module>
                     <label>Installer Update</label>
                     <name>update_installer</name>
@@ -1107,6 +1110,7 @@ Please visit us at http://www.suse.com/.
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
+		<!-- As soon as possible but after packager is initialized -->
                 <module>
                     <label>Installer Update</label>
                     <name>update_installer</name>
