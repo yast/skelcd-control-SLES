@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Apr 25 10:57:47 UTC 2016 - igonzalezsosa@suse.com
+
+- Disable system_roles module for PowerPC because KVM and XEN
+  are not supported.
+- 12.0.49
+
+-------------------------------------------------------------------
 Tue Apr  5 07:39:21 UTC 2016 - igonzalezsosa@suse.com
 
 - Automatically update the installer in the initial stage of:

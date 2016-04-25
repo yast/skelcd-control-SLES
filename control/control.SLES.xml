@@ -767,6 +767,7 @@ Please visit us at http://www.suse.com/.
                 </module>
                 <module>
                     <name>system_role</name>
+		    <archs>aarch64,x86_64,s390</archs>
                 </module>
                  <module>
                     <label>Disk</label>
