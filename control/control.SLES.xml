@@ -307,30 +307,37 @@ Please visit us at http://www.suse.com/.
 
         <!-- FATE #305583: Start CIMOM by default -->
         <service_sfcb><label>CIM Server</label></service_sfcb>
-
+        <roles_caption>
+          <!-- TRANSLATORS: dialog caption -->
+          <label>System Role</label>
+        </roles_caption>
+        <roles_text>
+          <!-- TRANSLATORS: label in a dialog -->
+          <label>SUSE Linux Enterprise Server offers several system roles.
+Choose the one that matches your server the best.</label>
+        </roles_text>
+        <roles_help>
+          <!-- TRANSLATORS: dialog help -->
+          <label>Select a role that matches your needs the best.
+Additional software can be selected later in software proposal.</label>
+        </roles_help>
         <normal_role>
           <!-- TRANSLATORS: a label for a system role -->
           <label>Default System</label>
         </normal_role>
         <normal_role_description>
-          <!-- TRANSLATORS: a description for a system role -->
-          <label>Nothing is modified compared to plain installation</label>
         </normal_role_description>
         <kvm_host_role>
           <!-- TRANSLATORS: a label for a system role -->
           <label>KVM Virtualization Host</label>
         </kvm_host_role>
         <kvm_host_role_description>
-          <!-- TRANSLATORS: a description for a system role -->
-          <label>A system with KVM pattern, /home does not get a separate partition</label>
         </kvm_host_role_description>
         <xen_host_role>
           <!-- TRANSLATORS: a label for a system role -->
           <label>Xen Virtualization Host</label>
         </xen_host_role>
         <xen_host_role_description>
-          <!-- TRANSLATORS: a description for a system role -->
-          <label>A system with Xen pattern, /home does not get a separate partition</label>
         </xen_host_role_description>
     </texts>
 
