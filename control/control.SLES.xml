@@ -313,13 +313,16 @@ Please visit us at http://www.suse.com/.
         </roles_caption>
         <roles_text>
           <!-- TRANSLATORS: label in a dialog -->
-          <label>SUSE Linux Enterprise Server offers several system roles.
-Choose the one that matches your server the best.</label>
+          <label>System Roles are predefined use cases which adjust the system 
+to be installed tailored for the selected scenario. 
+Choose the one which matches your system best.</label>
         </roles_text>
         <roles_help>
           <!-- TRANSLATORS: dialog help -->
-          <label>Select a role that matches your needs the best.
-Additional software can be selected later in software proposal.</label>
+          <label>&lt;p&gt;The system roles adjustments are in the range from package selection up 
+to disk partitioning. By choosing a system role, the system is 
+configured accordingly to match the use case of the role. The settings 
+defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</label>
         </roles_help>
         <normal_role>
           <!-- TRANSLATORS: a label for a system role -->
