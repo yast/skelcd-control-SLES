@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue May 10 12:05:00 UTC 2016 - jsrain@suse.cz
+
+- only offer system roles on x86 (bsc#976558)
+- 12.0.50
+
+-------------------------------------------------------------------
 Fri May  6 11:10:04 UTC 2016 - jsrain@suse.cz
 
 - more texts for roles selection dialog, removed verbose role
