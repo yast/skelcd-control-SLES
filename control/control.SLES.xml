@@ -351,6 +351,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <name>firewall_stage1</name>
                     <presentation_order>50</presentation_order>
                 </proposal_module>
+                <!-- Fate #319624 - proposal and dialog for existing SSH host keys -->
+                <proposal_module>
+                    <name>ssh_import</name>
+                    <presentation_order>80</presentation_order>
+                </proposal_module>
             </proposal_modules>
         </proposal>
 
@@ -397,6 +402,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <proposal_module>
                     <name>firewall_stage1</name>
                     <presentation_order>50</presentation_order>
+                </proposal_module>
+                <!-- Fate #319624 - proposal and dialog for existing SSH host keys -->
+                <proposal_module>
+                    <name>ssh_import</name>
+                    <presentation_order>80</presentation_order>
                 </proposal_module>
             </proposal_modules>
         </proposal>
@@ -455,6 +465,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <proposal_module>
                     <name>default_target</name>
                     <presentation_order>55</presentation_order>
+                </proposal_module>
+                <!-- Fate #319624 - proposal and dialog for existing SSH host keys -->
+                <proposal_module>
+                    <name>ssh_import</name>
+                    <presentation_order>80</presentation_order>
                 </proposal_module>
             </proposal_modules>
 
