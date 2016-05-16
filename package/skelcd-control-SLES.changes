@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Mon May 16 19:53:00 UTC 2016 - ancor@suse.com
+
+- Removed not longer necessary items from copy_to_system section
+- Added SSH keys import section to the installation proposal
+- Fate#319624 
+- 12.0.51
+
+-------------------------------------------------------------------
 Tue May 10 12:05:00 UTC 2016 - jsrain@suse.cz
 
 - only offer system roles on x86 (bsc#976558)
