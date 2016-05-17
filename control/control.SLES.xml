@@ -52,42 +52,6 @@ textdomain="control"
             </save_instsys_item>
         </save_instsys_content>
 
-        <!-- FATE #305019: configure the files to copy from a previous installation -->
-        <copy_to_system config:type="list">
-            <!-- FATE #300421: Import ssh keys from previous installations -->
-            <copy_to_system_item>
-                <id>import_ssh_keys</id>
-                <copy_to_dir>/</copy_to_dir>
-                <!-- Files that must be all present on the previous system -->
-                <mandatory_files config:type="list">
-                    <file_item>/etc/ssh/ssh_host_key</file_item>
-                    <file_item>/etc/ssh/ssh_host_key.pub</file_item>
-                </mandatory_files>
-                <!-- Files thay may be present -->
-                <optional_files config:type="list">
-                    <file_item>/etc/ssh/ssh_host_dsa_key</file_item>
-                    <file_item>/etc/ssh/ssh_host_dsa_key.pub</file_item>
-                    <file_item>/etc/ssh/ssh_host_rsa_key</file_item>
-                    <file_item>/etc/ssh/ssh_host_rsa_key.pub</file_item>
-                    <file_item>/etc/ssh/ssh_host_ecdsa_key</file_item>
-                    <file_item>/etc/ssh/ssh_host_ecdsa_key.pub</file_item>
-                </optional_files>
-            </copy_to_system_item>
-
-            <!-- FATE #120103: Import Users From Existing Partition -->
-            <copy_to_system_item>
-                <id>import_users</id>
-                <copy_to_dir>/var/lib/YaST2/imported/userdata/</copy_to_dir>
-                <!-- Files that must be all present on the previous system -->
-                <mandatory_files config:type="list">
-                    <file_item>/etc/shadow</file_item>
-                    <file_item>/etc/passwd</file_item>
-                    <file_item>/etc/login.defs</file_item>
-                    <file_item>/etc/group</file_item>
-                </mandatory_files>
-            </copy_to_system_item>
-        </copy_to_system>
-
         <!-- FATE: #304865: Enhance YaST Modules to cooperate better handling the product licenses -->
         <base_product_license_directory>/etc/YaST2/licenses/base/</base_product_license_directory>
 
@@ -387,6 +351,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <name>firewall_stage1</name>
                     <presentation_order>50</presentation_order>
                 </proposal_module>
+                <!-- Fate #319624 - proposal and dialog for existing SSH host keys -->
+                <proposal_module>
+                    <name>ssh_import</name>
+                    <presentation_order>80</presentation_order>
+                </proposal_module>
             </proposal_modules>
         </proposal>
 
@@ -433,6 +402,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <proposal_module>
                     <name>firewall_stage1</name>
                     <presentation_order>50</presentation_order>
+                </proposal_module>
+                <!-- Fate #319624 - proposal and dialog for existing SSH host keys -->
+                <proposal_module>
+                    <name>ssh_import</name>
+                    <presentation_order>80</presentation_order>
                 </proposal_module>
             </proposal_modules>
         </proposal>
@@ -491,6 +465,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <proposal_module>
                     <name>default_target</name>
                     <presentation_order>55</presentation_order>
+                </proposal_module>
+                <!-- Fate #319624 - proposal and dialog for existing SSH host keys -->
+                <proposal_module>
+                    <name>ssh_import</name>
+                    <presentation_order>80</presentation_order>
                 </proposal_module>
             </proposal_modules>
 
