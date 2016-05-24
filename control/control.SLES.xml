@@ -497,6 +497,7 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                         <proposal_module>language</proposal_module>
                         <proposal_module>default_target</proposal_module>
                         <proposal_module>kdump</proposal_module>
+                        <proposal_module>ssh_import</proposal_module>
                         <proposal_module>clone</proposal_module>
                     </proposal_modules>
                 </proposal_tab>
