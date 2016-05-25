@@ -68,6 +68,8 @@ Requires:       yast2-tune
 Requires:       yast2-update
 Requires:       yast2-users
 Requires:       yast2-x11
+# Ruby debugger in the inst-sys (FATE#318421)
+Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
 
 # Architecture specific packages
 #
@@ -84,7 +86,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.51
+Version:        12.0.52
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
