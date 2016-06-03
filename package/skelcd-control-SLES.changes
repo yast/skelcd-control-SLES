@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed May 25 13:32:14 CEST 2016 - schubi@suse.de
+
+- Added AutoYaST ssh_import support (FATE#319624)
+- 12.0.53
+
+-------------------------------------------------------------------
 Wed May 25 10:17:50 UTC 2016 - igonzalezsosa@suse.com
 
 - Include the Ruby debugger (byebug) in the inst-sys for easier

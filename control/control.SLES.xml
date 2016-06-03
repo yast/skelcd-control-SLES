@@ -249,6 +249,7 @@ textdomain="control"
         <clone_module>bootloader</clone_module>
         <clone_module>kdump</clone_module>
         <clone_module>ntp-client</clone_module>
+        <clone_module>ssh_import</clone_module>
         <clone_module>scc</clone_module>
     </clone_modules>
 
@@ -497,6 +498,7 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                         <proposal_module>language</proposal_module>
                         <proposal_module>default_target</proposal_module>
                         <proposal_module>kdump</proposal_module>
+                        <proposal_module>ssh_import</proposal_module>
                         <proposal_module>clone</proposal_module>
                     </proposal_modules>
                 </proposal_tab>
