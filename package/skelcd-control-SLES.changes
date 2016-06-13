@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Jun 13 08:21:35 UTC 2016 - igonzalezsosa@suse.com
+
+- Add URL to enable self-update feature
+- 12.0.54
+
+-------------------------------------------------------------------
 Wed May 25 13:32:14 CEST 2016 - schubi@suse.de
 
 - Added AutoYaST ssh_import support (FATE#319624)
