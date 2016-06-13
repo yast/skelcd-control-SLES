@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 Mon Jun 13 08:21:35 UTC 2016 - igonzalezsosa@suse.com
 
-- Add URL to enable self-update feature
+- Add URL to enable self-update feature (FATE#319716)
 - 12.0.54
 
 -------------------------------------------------------------------
