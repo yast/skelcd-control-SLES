@@ -1114,13 +1114,6 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
-		<!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
-                </module>
                 <module>
                     <label>System for Update</label>
                     <name>update_partition_auto</name>
@@ -1133,7 +1126,14 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <archs>all</archs>
                     <retranslate config:type="boolean">true</retranslate>
                 </module>
-               <module>
+                <!-- As soon as possible but after packager is initialized -->
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
+                <module>
                     <label>AutoYaST Settings</label>
                     <name>autosetup_upgrade</name>
                 </module>

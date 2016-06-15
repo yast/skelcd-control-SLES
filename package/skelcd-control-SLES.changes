@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Jun 14 15:29:33 UTC 2016 - igonzalezsosa@suse.com
+
+- Delay self-update during autoupgrade until software manager
+  is initialized (bsc#984656)
+- 12.0.55
+
+-------------------------------------------------------------------
 Mon Jun 13 08:21:35 UTC 2016 - igonzalezsosa@suse.com
 
 - Add URL to enable self-update feature (FATE#319716)
