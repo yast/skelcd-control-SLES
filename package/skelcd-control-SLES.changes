@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Jun 23 12:41:37 UTC 2016 - varkoly@suse.com
+
+- Install and enable xrdp by default (FATE#320363)
+- 12.0.56
+
+-------------------------------------------------------------------
 Tue Jun 14 15:29:33 UTC 2016 - igonzalezsosa@suse.com
 
 - Delay self-update during autoupgrade until software manager
