@@ -70,6 +70,9 @@ Requires:       yast2-users
 Requires:       yast2-x11
 # Ruby debugger in the inst-sys (FATE#318421)
 Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
+# Install and enable xrdp by default (FATE#320363)
+Requires:       yast2-rdp
+
 
 # Architecture specific packages
 #
@@ -86,7 +89,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.55
+Version:        12.0.56
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
