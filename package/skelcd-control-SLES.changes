@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
-Thu Jun 23 12:41:37 UTC 2016 - varkoly@suse.com
+Thu Jun 30 13:40:58 UTC 2016 - varkoly@suse.com
 
 - Install and enable xrdp by default (FATE#320363)
+  yast2-rdp is needed in installation system for the proposal.
 - 12.0.56
 
 -------------------------------------------------------------------
