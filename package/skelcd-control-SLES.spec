@@ -87,7 +87,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.56
+Version:        12.0.57
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT

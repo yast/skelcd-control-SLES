@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Jul 12 11:48:13 UTC 2016 - mvidner@suse.com
+
+- Do not install desktop patterns for KVM and XEN system roles
+  (bsc#986640).
+- 12.0.57
+
+-------------------------------------------------------------------
 Thu Jun 30 13:40:58 UTC 2016 - varkoly@suse.com
 
 - Install and enable xrdp by default (FATE#320363)
