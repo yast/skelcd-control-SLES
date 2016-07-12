@@ -1,7 +1,7 @@
 #
 # spec file for package skelcd-control-SLES
 #
-# Copyright (c) 2014 SUSE LINUX Products GmbH, Nuernberg, Germany.
+# Copyright (c) 2016 SUSE LINUX GmbH, Nuernberg, Germany.
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -32,7 +32,6 @@ Name:           skelcd-control-SLES
 BuildRequires:  libxml2-tools
 # RNG validation schema
 BuildRequires:  yast2-installation-control >= 3.1.9
-
 
 ######################################################################
 #
@@ -70,6 +69,8 @@ Requires:       yast2-users
 Requires:       yast2-x11
 # Ruby debugger in the inst-sys (FATE#318421)
 Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
+# Install and enable xrdp by default (FATE#320363)
+Requires:       yast2-rdp
 
 # Architecture specific packages
 #
@@ -86,7 +87,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.0.56
+Version:        12.0.57
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
