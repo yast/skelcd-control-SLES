@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Jul 26 14:05:24 UTC 2016 - cwh@suse.com
+
+- Add labels explaining the system roles (bsc#989711)
+- 12.2.1
+
+-------------------------------------------------------------------
 Thu Jul 21 11:30:11 UTC 2016 - lslezak@suse.cz
 
 - Remove some files from the inst-sys to have more free RAM on low
