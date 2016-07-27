@@ -287,9 +287,8 @@ Please visit us at http://www.suse.com/.
         </roles_caption>
         <roles_text>
           <!-- TRANSLATORS: label in a dialog -->
-          <label>System Roles are predefined use cases which adjust the system 
-to be installed tailored for the selected scenario. 
-Choose the one which matches your system best.</label>
+          <label>System Roles are predefined use cases which tailor the system
+for the selected scenario.</label>
         </roles_text>
         <roles_help>
           <!-- TRANSLATORS: dialog help -->
@@ -303,21 +302,24 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
           <label>Default System</label>
         </normal_role>
         <normal_role_description>
-          <label></label>
+          <label>• GNOME environment, with Btrfs root (/) partition
+• Separate /home partition (XFS) for disks larger than 20GB</label>
         </normal_role_description>
         <kvm_host_role>
           <!-- TRANSLATORS: a label for a system role -->
           <label>KVM Virtualization Host</label>
         </kvm_host_role>
         <kvm_host_role_description>
-          <label></label>
+          <label>• Kernel-based hypervisor and tools
+• No separate /home partition</label>
         </kvm_host_role_description>
         <xen_host_role>
           <!-- TRANSLATORS: a label for a system role -->
           <label>Xen Virtualization Host</label>
         </xen_host_role>
         <xen_host_role_description>
-          <label></label>
+          <label>• Bare metal hypervisor and tools
+• No separate /home partition</label>
         </xen_host_role_description>
     </texts>
 
