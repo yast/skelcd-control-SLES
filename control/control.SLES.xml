@@ -717,6 +717,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <label>Network Autosetup</label>
                     <name>setup_dhcp</name>
                 </module>
+                <!-- As soon as possible but after network is initialized -->
+                <module>
+                  <label>Installer Update</label>
+                  <name>update_installer</name>
+                </module>
                 <module>
                     <name>complex_welcome</name>
                     <label>Welcome</label>
@@ -742,13 +747,6 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
-                </module>
-		<!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
