@@ -719,8 +719,8 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 </module>
                 <!-- As soon as possible but after network is initialized -->
                 <module>
-                  <label>Installer Update</label>
-                  <name>update_installer</name>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
                 </module>
                 <module>
                     <name>complex_welcome</name>
@@ -1138,10 +1138,10 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
             <modules config:type="list">
                 <!-- As soon as possible -->
                 <module>
-                  <label>Installer Update</label>
-                  <name>update_installer</name>
-                  <enable_back>no</enable_back>
-                  <enable_next>yes</enable_next>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>no</enable_back>
+                    <enable_next>yes</enable_next>
                 </module>
                 <module>
                     <label>System Analysis</label>
