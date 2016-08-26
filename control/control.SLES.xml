@@ -717,6 +717,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <label>Network Autosetup</label>
                     <name>setup_dhcp</name>
                 </module>
+                <!-- As soon as possible but after network is initialized -->
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                </module>
                 <module>
                     <name>complex_welcome</name>
                     <label>Welcome</label>
@@ -742,13 +747,6 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
-                </module>
-		<!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
@@ -958,6 +956,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <label>Network Autosetup</label>
                     <name>setup_dhcp</name>
                 </module>
+                <!-- As soon as possible but after network is initialized -->
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                </module>
                 <module>
                     <name>complex_welcome</name>
                     <label>Welcome</label>
@@ -983,13 +986,6 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
-                </module>
-		<!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
@@ -1071,18 +1067,18 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <enable_next>no</enable_next>
             </defaults>
             <modules config:type="list">
+                <!-- As soon as possible -->
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>no</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
                 <module>
                     <label>AutoYaST Settings</label>
                     <name>autoinit</name>
                     <archs>all</archs>
                     <retranslate config:type="boolean">true</retranslate>
-                </module>
-		<!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
                 </module>
                 <module>
                     <label>AutoYaST Settings</label>
@@ -1140,6 +1136,13 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
             <mode>autoupgrade</mode>
             <stage>initial</stage>
             <modules config:type="list">
+                <!-- As soon as possible -->
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>no</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
                 <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
@@ -1157,13 +1160,6 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <name>autoinit</name>
                     <archs>all</archs>
                     <retranslate config:type="boolean">true</retranslate>
-                </module>
-                <!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
                 </module>
                 <module>
                     <label>AutoYaST Settings</label>
