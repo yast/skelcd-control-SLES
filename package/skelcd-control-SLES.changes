@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Fri Aug 26 12:14:17 UTC 2016 - lslezak@suse.cz
+
+- Move the YaST self update step earlier in the workflow to avoid
+  bugs caused by restarting YaST (bsc#985055, bsc#992608,
+  bsc#993690, bsc#993249)
+- 12.2.2
+
+-------------------------------------------------------------------
 Tue Jul 26 14:05:24 UTC 2016 - cwh@suse.com
 
 - Add labels explaining the system roles (bsc#989711)
