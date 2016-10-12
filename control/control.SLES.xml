@@ -1231,10 +1231,6 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
             <modules config:type="list">
                 <module>
                     <label>Perform Installation</label>
-                    <name>netprobe</name>
-                </module>
-                <module>
-                    <label>Perform Installation</label>
                     <name>autopost</name>
                 </module>
                 <module>
