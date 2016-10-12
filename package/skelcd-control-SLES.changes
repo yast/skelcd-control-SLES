@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue Oct 11 11:24:17 UTC 2016 - mfilka@suse.com
+
+- Removed reference to netprobe client. It was used in AutoYaST
+  only and everything what this client does should be currently
+  handled by wicked.
+- 12.3.0 
+
+-------------------------------------------------------------------
 Fri Aug 26 12:14:17 UTC 2016 - lslezak@suse.cz
 
 - Move the YaST self update step earlier in the workflow to avoid
