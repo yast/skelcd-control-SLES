@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Oct 27 15:25:45 CEST 2016 - shundhammer@suse.de
+
+- Added subvolumes (fate#321737)
+- 12.2.2.1
+
+-------------------------------------------------------------------
 Fri Aug 26 12:14:17 UTC 2016 - lslezak@suse.cz
 
 - Move the YaST self update step earlier in the workflow to avoid
