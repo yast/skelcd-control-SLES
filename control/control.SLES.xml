@@ -114,6 +114,9 @@ textdomain="control"
 
         <selection_type config:type="symbol">auto</selection_type>
 
+        <!-- Software selection will be read only if there is no error. CASP specific feature -->
+        <readonly_selection config:type="boolean">true<readonly_selection>
+
         <!-- bnc#875350: Explicitly selecting these patterns by default -->
         <!-- For a list of patterns, see https://build.suse.de/package/view_file/SUSE:SLE-12-SP1:GA/patterns-sles/patterns-sles.spec?expand=1 -->
         <default_patterns>base Minimal</default_patterns>
