@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Feb  6 13:43:51 UTC 2017 - jreidinger@suse.com
+
+- Drop live installation (FATE#321360)
+- 12.3.2
+
+-------------------------------------------------------------------
 Thu Oct 27 15:25:45 CEST 2016 - shundhammer@suse.de
 
 - Added subvolumes (fate#321737)
