@@ -81,7 +81,7 @@ textdomain="control"
         </services_proposal>
 
 	<!-- self-update URL -->
-	<self_update_url>https://updates.suse.com/SUSE/Updates/SLE-SERVER-INSTALLER/12-SP2/$arch/update</self_update_url>
+	<self_update_url>https://updates.suse.com/SUSE/Updates/SLE-SERVER-INSTALLER/12-SP3/$arch/update</self_update_url>
     </globals>
 
     <software>
