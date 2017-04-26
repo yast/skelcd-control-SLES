@@ -62,6 +62,7 @@ Requires:       yast2-nfs-client
 Requires:       yast2-ntp-client
 Requires:       yast2-proxy
 Requires:       yast2-services-manager
+Requires:       yast2-configuration-management
 Requires:       yast2-slp
 Requires:       yast2-trans-stats
 Requires:       yast2-tune
@@ -88,7 +89,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        12.3.3
+Version:        12.3.4
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT

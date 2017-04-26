@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Apr 26 10:15:32 CEST 2017 - schubi@suse.de
+
+- Added yast2-configuration-management to inst-sys.
+  (FATE#319830)
+- 12.3.4
+
+-------------------------------------------------------------------
 Tue Apr  4 12:14:28 UTC 2017 - mvidner@suse.com
 
 - Use SP3 packages for self update, not SP2 (bsc#1032082).
