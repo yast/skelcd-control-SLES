@@ -1,1 +1,4 @@
 /package/skelcd-control-SLES-*.tar.bz2
+doc/
+.yardoc/
+control.pot
