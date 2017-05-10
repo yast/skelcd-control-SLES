@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Wed May 10 13:51:14 UTC 2017 - knut.anderssen@suse.com
+
+- Added the install_inf client also in autoinstallation allowing
+  the user to modify an invalid registration URL as early as
+  possible. (bsc#1035908)
+- 12.3.5
+
+-------------------------------------------------------------------
 Wed Apr 26 10:15:32 CEST 2017 - schubi@suse.de
 
 - Added yast2-configuration-management to inst-sys.
