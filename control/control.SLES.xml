@@ -782,7 +782,7 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
             <stage>initial</stage>
             <modules config:type="list">
                 <module>
-                    <label>Load Linuxrc Network Configuration</label>
+                    <label>Check Linuxrc Configuration</label>
                     <name>install_inf</name>
                 </module>
                 <module>
@@ -928,7 +928,7 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
             <stage>initial</stage>
             <modules config:type="list">
                 <module>
-                    <label>Load Linuxrc Network Configuration</label>
+                    <label>Check Linuxrc Configuration</label>
                     <name>install_inf</name>
                 </module>
                 <module>
@@ -1046,6 +1046,10 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <enable_next>no</enable_next>
             </defaults>
             <modules config:type="list">
+                <module>
+                    <label>Check Linuxrc Configuration</label>
+                    <name>install_inf</name>
+                </module>
                 <!-- As soon as possible -->
                 <module>
                     <label>Installer Update</label>
@@ -1115,6 +1119,10 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
             <mode>autoupgrade</mode>
             <stage>initial</stage>
             <modules config:type="list">
+                <module>
+                    <label>Check Linuxrc Configuration</label>
+                    <name>install_inf</name>
+                </module>
                 <!-- As soon as possible -->
                 <module>
                     <label>Installer Update</label>
