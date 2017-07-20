@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<productDefines xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+
+<!--
+Work around for the text domain
+textdomain="control"
+-->
+
+    <textdomain>control</textdomain>
+
+    <update>
+      <workflows config:type="list">
+        <workflow>
+          <defaults>
+            <archs>all</archs>
+            <enable_back>no</enable_back>
+            <enable_next>no</enable_next>
+          </defaults>
+          <mode>installation</mode>
+          <stage>initial</stage>
+          <append_modules config:type="list">
+            <module>
+                <name>scc</name>
+                <enable_back>yes</enable_back>
+                <enable_next>yes</enable_next>
+            </module>
+            <module>
+                <label>System Analysis</label>
+                <name>installation_options</name>
+            </module>
+            <module>
+                <label>Add-On Products</label>
+                <name>add-on</name>
+                <enable_back>yes</enable_back>
+                <enable_next>yes</enable_next>
+            </module>
+            <module>
+                <name>download_release_notes</name>
+            </module>
+            <module>
+                <name>system_role</name>
+                <archs>i386,x86_64</archs>
+            </module>
+             <module>
+                <label>Disk</label>
+                <name>disk_proposal</name>
+                <enable_back>yes</enable_back>
+                <enable_next>yes</enable_next>
+            </module>
+            <module>
+                <label>Time Zone</label>
+                <name>timezone</name>
+                <enable_back>yes</enable_back>
+                <enable_next>yes</enable_next>
+                <arguments>
+                    <first_run>yes</first_run>
+                </arguments>
+            </module>
+            <module>
+                <name>user_first</name>
+            </module>
+            <module>
+                <name>root_first</name>
+            </module>
+            <module>
+                <heading>yes</heading>
+                <label>Installation</label>
+            </module>
+            <module>
+                <label>Installation Summary</label>
+                <name>initial_installation_proposal</name>
+                <execute>inst_proposal</execute>
+                <proposal>initial</proposal>
+            </module>
+            <!-- FATE #303860: Provide consistent progress during installation -->
+            <module>
+                <label>Perform Installation</label>
+                <name>prepareprogress</name>
+            </module>
+            <module>
+                <label>Perform Installation</label>
+                <name>prepdisk</name>
+            </module>
+            <!-- Clean up the inst-sys to have more free RAM on low memory systems -->
+            <!-- Note: Needs to be call *after* the partitioning step as it might delete
+            the file system or storage kernel modules from inst-sys. They need to be already
+            loaded and active. -->
+            <module>
+                <label>Installer Cleanup</label>
+                <name>instsys_cleanup</name>
+            </module>
+            <module>
+                <label>Perform Installation</label>
+                <name>kickoff</name>
+            </module>
+            <module>
+                <label>Perform Installation</label>
+                <name>rpmcopy</name>
+            </module>
+            <module>
+                <label>Perform Installation</label>
+                <name>addon_update_sources</name>
+            </module>
+            <module>
+                <label>Perform Installation</label>
+                <name>extrasources</name>
+            </module>
+            <module>
+                <label>Perform Installation</label>
+                <name>save_hardware_status</name>
+            </module>
+            <module>
+                <label>Perform Installation</label>
+                <name>finish</name>
+            </module>
+          </append_modules>
+        </workflow>
+      </workflows>
+    </update>
+</productDefines>
