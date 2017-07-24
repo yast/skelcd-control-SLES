@@ -52,48 +52,50 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
     </texts>
 
     <update>
-      <insert_system_roles config:type="list">
-        <insert_system_role>
-          <!-- FATE#317481 -->
-          <system_roles config:type="list">
-            <system_role>
-              <!-- the id is a key for texts/$id/label
-                                   and texts/$id_description/label below -->
-              <id>normal_role</id>
-              <!-- nothing is overlaid for the normal role -->
-            </system_role>
+      <system_roles>
+        <insert_system_roles config:type="list">
+          <insert_system_role>
+            <!-- FATE#317481 -->
+            <system_roles config:type="list">
+              <system_role>
+                <!-- the id is a key for texts/$id/label
+                                     and texts/$id_description/label below -->
+                <id>normal_role</id>
+                <!-- nothing is overlaid for the normal role -->
+              </system_role>
 
-            <system_role>
-              <id>kvm_host_role</id>
+              <system_role>
+                <id>kvm_host_role</id>
 
-              <!-- the rest is overlaid over the feature sections and values. -->
-              <partitioning>
-                <try_separate_home config:type="boolean">false</try_separate_home>
-              </partitioning>
-              <software>
-                <default_patterns>base Minimal kvm_server</default_patterns>
-                <!-- the cdata trick produces an empty string in the data
-                     instead of omitting the key entirely -->
-                <optional_default_patterns><![CDATA[]]></optional_default_patterns>
-                <default_desktop><![CDATA[]]></default_desktop>
-              </software>
-            </system_role>
+                <!-- the rest is overlaid over the feature sections and values. -->
+                <partitioning>
+                  <try_separate_home config:type="boolean">false</try_separate_home>
+                </partitioning>
+                <software>
+                  <default_patterns>base Minimal kvm_server</default_patterns>
+                  <!-- the cdata trick produces an empty string in the data
+                       instead of omitting the key entirely -->
+                  <optional_default_patterns><![CDATA[]]></optional_default_patterns>
+                  <default_desktop><![CDATA[]]></default_desktop>
+                </software>
+              </system_role>
 
-            <system_role>
-              <id>xen_host_role</id>
+              <system_role>
+                <id>xen_host_role</id>
 
-              <partitioning>
-                <try_separate_home config:type="boolean">false</try_separate_home>
-              </partitioning>
-              <software>
-                <default_patterns>base Minimal xen_server</default_patterns>
-                <optional_default_patterns><![CDATA[]]></optional_default_patterns>
-                <default_desktop><![CDATA[]]></default_desktop>
-              </software>
-            </system_role>
-          </system_roles>
-        <insert_system_role>
-      </insert_system_roles>
+                <partitioning>
+                  <try_separate_home config:type="boolean">false</try_separate_home>
+                </partitioning>
+                <software>
+                  <default_patterns>base Minimal xen_server</default_patterns>
+                  <optional_default_patterns><![CDATA[]]></optional_default_patterns>
+                  <default_desktop><![CDATA[]]></default_desktop>
+                </software>
+              </system_role>
+            </system_roles>
+          </insert_system_role>
+        </insert_system_roles>
+      </system_roles>
 
       <workflows config:type="list">
         <workflow>
