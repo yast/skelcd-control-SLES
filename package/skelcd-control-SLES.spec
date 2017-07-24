@@ -74,6 +74,8 @@ Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
 # Install and enable xrdp by default (FATE#320363)
 Requires:       yast2-rdp
 
+Provides:       system-installation = SLES
+
 # Architecture specific packages
 #
 %ifarch s390 s390x
