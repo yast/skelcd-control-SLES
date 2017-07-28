@@ -97,6 +97,107 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
         </insert_system_roles>
       </system_roles>
 
+      <partitioning>
+          <try_separate_home config:type="boolean">true</try_separate_home>
+          <limit_try_home>5GB</limit_try_home>
+          <root_space_percent>40</root_space_percent>
+          <root_base_size>3GB</root_base_size>
+          <root_max_size>10GB</root_max_size>
+          <proposal_lvm config:type="boolean">false</proposal_lvm>
+          <vm_desired_size>15GB</vm_desired_size>
+          <vm_home_max_size>25GB</vm_home_max_size>
+          <btrfs_increase_percentage config:type="integer">300</btrfs_increase_percentage>
+          <!-- the default subvolume "@" was requested by product management -->
+          <btrfs_default_subvolume>@</btrfs_default_subvolume>
+
+          <!-- Subvolumes to be created for a Btrfs root file system -->
+          <!-- copy_on_write is true by default -->
+          <!-- The XML parser is very simplistic, thus not using attributes, but sub-elements -->
+          <subvolumes config:type="list">
+              <subvolume>
+                  <path>home</path>
+              </subvolume>
+              <subvolume>
+                  <path>opt</path>
+              </subvolume>
+              <subvolume>
+                  <path>srv</path>
+              </subvolume>
+              <subvolume>
+                  <path>tmp</path>
+              </subvolume>
+              <subvolume>
+                  <path>usr/local</path>
+              </subvolume>
+              <subvolume>
+                  <path>var/cache</path>
+              </subvolume>
+              <subvolume>
+                  <path>var/crash</path>
+              </subvolume>
+              <subvolume>
+                  <path>var/lib/libvirt/images</path>
+                  <copy_on_write config:type="boolean">false</copy_on_write>
+              </subvolume>
+              <subvolume>
+                  <path>var/lib/machines</path>
+              </subvolume>
+              <subvolume>
+                  <path>var/lib/mailman</path>
+              </subvolume>
+              <subvolume>
+                  <path>var/lib/mariadb</path>
+                  <copy_on_write config:type="boolean">false</copy_on_write>
+              </subvolume>
+              <subvolume>
+                  <path>var/lib/mysql</path>
+                  <copy_on_write config:type="boolean">false</copy_on_write>
+              </subvolume>
+              <subvolume>
+                  <path>var/lib/named</path>
+              </subvolume>
+              <subvolume>
+                  <path>var/lib/pgsql</path>
+                  <copy_on_write config:type="boolean">false</copy_on_write>
+              </subvolume>
+              <subvolume>
+                  <path>var/log</path>
+              </subvolume>
+              <subvolume>
+                  <path>var/opt</path>
+              </subvolume>
+              <subvolume>
+                  <path>var/spool</path>
+              </subvolume>
+              <subvolume>
+                  <path>var/tmp</path>
+              </subvolume>
+
+              <!-- architecture specific subvolumes -->
+
+              <subvolume>
+                  <path>boot/grub2/i386-pc</path>
+                  <archs>i386,x86_64</archs>
+              </subvolume>
+              <subvolume>
+                  <path>boot/grub2/x86_64-efi</path>
+                  <archs>x86_64</archs>
+              </subvolume>
+              <subvolume>
+                  <path>boot/grub2/powerpc-ieee1275</path>
+                  <archs>ppc,!board_powernv</archs>
+              </subvolume>
+              <subvolume>
+                  <path>boot/grub2/x86_64-efi</path>
+                  <archs>x86_64</archs>
+              </subvolume>
+              <subvolume>
+                  <path>boot/grub2/s390x-emu</path>
+                  <archs>s390</archs>
+              </subvolume>
+          </subvolumes>
+      </partitioning>
+
       <workflows config:type="list">
         <workflow>
           <defaults>
