@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Jul 31 12:04:13 UTC 2017 - jreidinger@suse.com
+
+- Allow to be used on top of LeanOS installation (FATE#323450)
+- 15.0.0
+
+-------------------------------------------------------------------
 Wed Apr 26 10:15:32 CEST 2017 - schubi@suse.de
 
 - Added yast2-configuration-management to inst-sys.
