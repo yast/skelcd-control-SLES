@@ -91,7 +91,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        15.0.0
+Version:        15.0.1
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
@@ -116,10 +116,8 @@ make -C control check
 #
 # Add control file
 #
-mkdir -p $RPM_BUILD_ROOT/CD1
-install -m 644 control/control.SLES.xml $RPM_BUILD_ROOT/CD1/control.xml
-
-# Add installation.xml for install on top of leanOS
+mkdir -p $RPM_BUILD_ROOT/usr/lib/skelcd/CD1
+install -m 644 control/control.SLES.xml $RPM_BUILD_ROOT/usr/lib/skelcd/CD1/control.xml
 install -m 644 control/installation.SLES.xml $RPM_BUILD_ROOT/installation.xml
 
 # install LICENSE (required by build service check)
@@ -128,7 +126,7 @@ install -m 644 LICENSE $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
 
 %files
 %defattr(644,root,root,755)
-/CD1
+/usr/lib/skelcd
 /installation.xml
 %doc %dir %{_prefix}/share/doc/packages/%{name}
 %doc %{_prefix}/share/doc/packages/%{name}/LICENSE

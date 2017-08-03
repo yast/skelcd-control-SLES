@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Aug  3 06:31:13 UTC 2017 - jreidinger@suse.com
+
+- place skelcd to /usr/lib/skelcd (bsc#1031335)
+- 15.0.1
+
+-------------------------------------------------------------------
 Mon Jul 31 12:04:13 UTC 2017 - jreidinger@suse.com
 
 - Allow to be used on top of LeanOS installation (FATE#323450)
