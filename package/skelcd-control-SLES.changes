@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Aug 11 13:18:10 UTC 2017 - knut.anderssen@suse.com
+
+- Fixed SLES 15 self_update_url (bsc#1051637)
+- 15.0.2
+
+-------------------------------------------------------------------
 Thu Aug  3 06:31:13 UTC 2017 - jreidinger@suse.com
 
 - place skelcd to /usr/lib/skelcd (bsc#1031335)
