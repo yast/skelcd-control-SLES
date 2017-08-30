@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Aug 30 14:55:31 UTC 2017 - gsouza@suse.com
+
+- Added complex welcome module to autoinstallation in order to
+  display README.BETA in case it exists. (bsc#1047060)
+- 15.0.2
+
+-------------------------------------------------------------------
 Thu Aug  3 06:31:13 UTC 2017 - jreidinger@suse.com
 
 - place skelcd to /usr/lib/skelcd (bsc#1031335)
