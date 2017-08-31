@@ -1054,8 +1054,7 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <enable_next>yes</enable_next>
                 </module>
                 <!-- bsc#1047060: Module used only to display a beta warning in case README.BETA
-                file exists. Other than that, the module is completely skipped in autoinstallation
-                mode -->
+                file exists. Other than that, the module is completely skipped in auto mode -->
                 <module>
                     <name>complex_welcome</name>
                     <label>Welcome</label>
@@ -1134,6 +1133,18 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <name>update_installer</name>
                     <enable_back>no</enable_back>
                     <enable_next>yes</enable_next>
+                </module>
+                <!-- bsc#1047060: Module used only to display a beta warning in case README.BETA
+                file exists. Other than that, the module is completely skipped in auto mode -->
+                <module>
+                    <name>complex_welcome</name>
+                    <label>Welcome</label>
+                    <enable_back>no</enable_back>
+                    <enable_next>yes</enable_next>
+                    <arguments>
+                        <first_run>yes</first_run>
+                    </arguments>
+                    <retranslate config:type="boolean">true</retranslate>
                 </module>
                 <module>
                     <label>System Analysis</label>
