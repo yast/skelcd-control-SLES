@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Sep  1 08:54:41 UTC 2017 - lslezak@suse.cz
+
+- Added yast2-s390 dependency to fix failed disk activation
+  (bsc#1055871)
+- 15.0.3
+
+-------------------------------------------------------------------
 Wed Aug 30 14:55:31 UTC 2017 - gsouza@suse.com
 
 - Added complex welcome module to autoinstallation in order to

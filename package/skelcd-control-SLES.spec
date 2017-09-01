@@ -80,6 +80,7 @@ Provides:       system-installation() = SLES
 #
 %ifarch s390 s390x
 Requires:       yast2-reipl >= 3.1.4
+Requires:       yast2-s390
 %endif
 
 %ifarch %ix86 x86_64
@@ -91,7 +92,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        15.0.2
+Version:        15.0.3
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
