@@ -945,6 +945,11 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                     <label>Installer Update</label>
                     <name>update_installer</name>
                 </module>
+                <!-- We need to initialize libzypp in order to read product's license -->
+                <module>
+                    <label>Repositories Initialization</label>
+                    <name>repositories_initialization</name>
+                </module>
                 <module>
                     <name>complex_welcome</name>
                     <label>Welcome</label>
