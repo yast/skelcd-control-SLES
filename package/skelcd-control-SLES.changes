@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Sep  4 15:07:45 UTC 2017 - igonzalezsosa@suse.com
+
+- Initialize libzypp in advance in order to read the product's
+  license during upgrade (fate#322276)
+- 15.0.5
+
+-------------------------------------------------------------------
 Mon Sep  4 14:51:36 UTC 2017 - igonzalezsosa@suse.com
 
 - Initialize libzypp in advance in order to read the product's
