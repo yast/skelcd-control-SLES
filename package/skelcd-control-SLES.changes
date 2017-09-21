@@ -4,6 +4,34 @@ Thu Sep 21 08:45:52 UTC 2017 - jreidinger@suse.com
 - reduce roles to only ones installable with plain media and define
   roles order (bsc#1049297)
 - drop obsolete control.xml
+- 15.0.6
+
+-------------------------------------------------------------------
+Mon Sep  4 15:07:45 UTC 2017 - igonzalezsosa@suse.com
+
+- Initialize libzypp in advance in order to read the product's
+  license during upgrade (fate#322276)
+- 15.0.5
+
+-------------------------------------------------------------------
+Mon Sep  4 14:51:36 UTC 2017 - igonzalezsosa@suse.com
+
+- Initialize libzypp in advance in order to read the product's
+  license (fate#322276)
+- 15.0.4
+
+-------------------------------------------------------------------
+Fri Sep  1 08:54:41 UTC 2017 - lslezak@suse.cz
+
+- Added yast2-s390 dependency to fix failed disk activation
+  (bsc#1055871)
+- 15.0.3
+
+-------------------------------------------------------------------
+Wed Aug 30 14:55:31 UTC 2017 - gsouza@suse.com
+
+- Added complex welcome module to autoinstallation in order to
+  display README.BETA in case it exists. (bsc#1047060)
 - 15.0.2
 
 -------------------------------------------------------------------
