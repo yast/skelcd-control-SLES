@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Sep 21 08:45:52 UTC 2017 - jreidinger@suse.com
+
+- reduce roles to only ones installable with plain media and define
+  roles order (bsc#1049297)
+- drop obsolete control.xml
+- 15.0.2
+
+-------------------------------------------------------------------
 Thu Aug  3 06:31:13 UTC 2017 - jreidinger@suse.com
 
 - place skelcd to /usr/lib/skelcd (bsc#1031335)
