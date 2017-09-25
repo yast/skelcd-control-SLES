@@ -186,6 +186,10 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <enable_next>yes</enable_next>
             </module>
             <module>
+                <label>Apply Modules Extensions</label>
+                <name>modules_extensions</name>
+            </module>
+            <module>
                 <name>download_release_notes</name>
             </module>
             <module>
