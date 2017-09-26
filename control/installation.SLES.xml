@@ -29,9 +29,9 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
           <!-- TRANSLATORS: a label for a system role -->
           <label>Minimal</label>
         </minimal_role>
-        <normal_role_description>
+        <minimal_role_description>
           <label>Minimal software selection for SUSE Linux Enterprise.</label>
-        </normal_role_description>
+        </minimal_role_description>
     </texts>
 
     <partitioning>
