@@ -25,30 +25,13 @@ to disk partitioning. By choosing a system role, the system is
 configured accordingly to match the use case of the role. The settings
 defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</label>
         </roles_help>
-        <normal_role>
+        <minimal_role>
           <!-- TRANSLATORS: a label for a system role -->
-          <label>Default System</label>
-        </normal_role>
-        <normal_role_description>
-          <label>• GNOME environment, with Btrfs root (/) partition
-• Separate /home partition (XFS) for disks larger than 20GB</label>
-        </normal_role_description>
-        <kvm_host_role>
-          <!-- TRANSLATORS: a label for a system role -->
-          <label>KVM Virtualization Host</label>
-        </kvm_host_role>
-        <kvm_host_role_description>
-          <label>• Kernel-based hypervisor and tools
-• No separate /home partition</label>
-        </kvm_host_role_description>
-        <xen_host_role>
-          <!-- TRANSLATORS: a label for a system role -->
-          <label>Xen Virtualization Host</label>
-        </xen_host_role>
-        <xen_host_role_description>
-          <label>• Bare metal hypervisor and tools
-• No separate /home partition</label>
-        </xen_host_role_description>
+          <label>Minimal</label>
+        </minimal_role>
+        <minimal_role_description>
+          <label>Minimal software selection for SUSE Linux Enterprise.</label>
+        </minimal_role_description>
     </texts>
 
     <partitioning>
@@ -161,36 +144,15 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
               <system_role>
                 <!-- the id is a key for texts/$id/label
                                      and texts/$id_description/label below -->
-                <id>normal_role</id>
+                <id>minimal_role</id>
                 <!-- nothing is overlaid for the normal role -->
-              </system_role>
 
-              <system_role>
-                <id>kvm_host_role</id>
-
-                <!-- the rest is overlaid over the feature sections and values. -->
-                <partitioning>
-                  <try_separate_home config:type="boolean">false</try_separate_home>
-                </partitioning>
+                <order config:type="integer">1000</order>
                 <software>
-                  <default_patterns>base Minimal kvm_server</default_patterns>
+                  <default_patterns>Minimal</default_patterns>
                   <!-- the cdata trick produces an empty string in the data
                        instead of omitting the key entirely -->
                   <optional_default_patterns><![CDATA[]]></optional_default_patterns>
-                  <default_desktop><![CDATA[]]></default_desktop>
-                </software>
-              </system_role>
-
-              <system_role>
-                <id>xen_host_role</id>
-
-                <partitioning>
-                  <try_separate_home config:type="boolean">false</try_separate_home>
-                </partitioning>
-                <software>
-                  <default_patterns>base Minimal xen_server</default_patterns>
-                  <optional_default_patterns><![CDATA[]]></optional_default_patterns>
-                  <default_desktop><![CDATA[]]></default_desktop>
                 </software>
               </system_role>
             </system_roles>
@@ -222,6 +184,10 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <name>add-on</name>
                 <enable_back>yes</enable_back>
                 <enable_next>yes</enable_next>
+            </module>
+            <module>
+                <label>Apply Modules Extensions</label>
+                <name>modules_extensions</name>
             </module>
             <module>
                 <name>download_release_notes</name>

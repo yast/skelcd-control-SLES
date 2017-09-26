@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Sep 21 08:45:52 UTC 2017 - jreidinger@suse.com
+
+- reduce roles to only ones installable with plain media and define
+  roles order (bsc#1049297)
+- drop obsolete control.xml
+- 15.0.6
+
+-------------------------------------------------------------------
 Mon Sep  4 15:07:45 UTC 2017 - igonzalezsosa@suse.com
 
 - Initialize libzypp in advance in order to read the product's
