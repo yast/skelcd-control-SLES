@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue Oct  3 07:31:27 UTC 2017 - mfilka@suse.com
+
+- fate#323450
+  - dropped part of autoinstallation workflow from installation.xml
+    which is shared via control.xml
+- 15.0.7
+
+-------------------------------------------------------------------
 Thu Sep 21 08:45:52 UTC 2017 - jreidinger@suse.com
 
 - reduce roles to only ones installable with plain media and define
