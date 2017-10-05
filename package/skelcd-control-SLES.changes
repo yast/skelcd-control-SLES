@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Oct  4 22:02:01 UTC 2017 - sflees@suse.de
+
+- Update for new patterns
+  - Minimal is replaced by minimal_base and base
+- 15.0.8
+
+-------------------------------------------------------------------
 Tue Oct  3 07:31:27 UTC 2017 - mfilka@suse.com
 
 - fate#323450
