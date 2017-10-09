@@ -1,7 +1,13 @@
 -------------------------------------------------------------------
+Mon Oct  9 11:25:37 UTC 2017 - jsrain@suse.cz
+
+- minimal role only requires the minimal_base pattern (bsc#1049297)
+- 15.0.9
+
+-------------------------------------------------------------------
 Wed Oct  4 22:02:01 UTC 2017 - sflees@suse.de
 
-- Update for new patterns
+- Update for new patterns (bsc#1049297)
   - Minimal is replaced by minimal_base and base
 - 15.0.8
 
