@@ -194,7 +194,6 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
             </module>
             <module>
                 <name>system_role</name>
-                <archs>i386,x86_64</archs>
             </module>
              <module>
                 <label>Disk</label>

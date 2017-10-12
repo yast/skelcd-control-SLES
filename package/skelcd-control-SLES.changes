@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Oct 12 11:30:56 UTC 2017 - jreidinger@suse.com
+
+- show roles selection on all architectures (bsc#1049297)
+- 15.0.10
+
+-------------------------------------------------------------------
 Mon Oct  9 11:25:37 UTC 2017 - jsrain@suse.cz
 
 - minimal role only requires the minimal_base pattern (bsc#1049297)
