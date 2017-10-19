@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Oct 19 06:04:23 UTC 2017 - jsrain@suse.cz
+
+- re-added base pattern to minimal role (bsc#1064135)
+- 15.0.11
+
+-------------------------------------------------------------------
 Thu Oct 12 11:30:56 UTC 2017 - jreidinger@suse.com
 
 - show roles selection on all architectures (bsc#1049297)
