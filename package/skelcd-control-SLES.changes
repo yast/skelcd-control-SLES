@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Dec  6 00:22:46 UTC 2017 - kmroz@suse.com
+
+- /var/lib/ceph as btrfs subvolume with CoW disabled (bsc#1013011)
+- 15.0.12
+
+-------------------------------------------------------------------
 Thu Oct 19 10:47:17 UTC 2017 - jsrain@suse.cz
 
 - removed minimal_base pattern from minimal role (bsc#1064135)

@@ -73,6 +73,10 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <path>var/crash</path>
             </subvolume>
             <subvolume>
+                <path>var/lib/ceph</path>
+                <copy_on_write config:type="boolean">false</copy_on_write>
+            </subvolume>
+            <subvolume>
                 <path>var/lib/libvirt/images</path>
                 <copy_on_write config:type="boolean">false</copy_on_write>
             </subvolume>
