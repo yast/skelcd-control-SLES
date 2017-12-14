@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Dec 12 17:11:12 UTC 2017 - rbrown@suse.com
+
+- adjust subvolume list to have NoCOW /var instead of many
+  subvolumes (boo#1075369)
+- 15.0.13
+
+-------------------------------------------------------------------
 Wed Dec  6 00:22:46 UTC 2017 - kmroz@suse.com
 
 - /var/lib/ceph as btrfs subvolume with CoW disabled (bsc#1013011)
@@ -189,7 +196,7 @@ Mon May 16 19:53:00 UTC 2016 - ancor@suse.com
 
 - Removed not longer necessary items from copy_to_system section
 - Added SSH keys import section to the installation proposal
-- Fate#319624 
+- Fate#319624
 - 12.0.51
 
 -------------------------------------------------------------------
@@ -241,7 +248,7 @@ Thu Sep 11 08:08:21 UTC 2014 - lslezak@suse.cz
 -------------------------------------------------------------------
 Wed Sep 10 20:17:51 CEST 2014 - behlert@suse.de
 
-- use correct gnome pattern for upgrade, too 
+- use correct gnome pattern for upgrade, too
 
 -------------------------------------------------------------------
 Fri Sep  5 14:55:12 CEST 2014 - fcrozat@suse.com
@@ -273,7 +280,7 @@ Thu Jul  3 15:48:53 CEST 2014 - locilka@suse.com
 -------------------------------------------------------------------
 Wed Jun 25 11:55:12 UTC 2014 - jreidinger@suse.com
 
-- return back proposal entry for autoyast clonning (bnc#881108) 
+- return back proposal entry for autoyast clonning (bnc#881108)
 - 12.0.39
 
 -------------------------------------------------------------------
@@ -548,7 +555,7 @@ Fri Jan 17 14:22:08 UTC 2014 - lslezak@suse.cz
 -------------------------------------------------------------------
 Wed Jan 15 15:06:39 CET 2014 - behlert@suse.de
 
-- added password dialogs again 
+- added password dialogs again
 
 -------------------------------------------------------------------
 Tue Jan 14 08:03:38 UTC 2014 - lslezak@suse.cz
@@ -570,12 +577,12 @@ Tue Dec 10 15:17:39 UTC 2013 - lslezak@suse.cz
 -------------------------------------------------------------------
 Thu Dec  5 16:23:29 CET 2013 - ro@suse.de
 
-- update file from yast master git 
+- update file from yast master git
 
 -------------------------------------------------------------------
 Fri Nov 15 11:48:53 CET 2013 - ro@suse.de
 
-- add id to copy_to_system_item node in control.xml (fix build) 
+- add id to copy_to_system_item node in control.xml (fix build)
 
 -------------------------------------------------------------------
 Wed Apr 10 11:59:57 CEST 2013 - kukuk@suse.de
@@ -606,7 +613,7 @@ Mon Jan  9 13:39:10 CET 2012 - locilka@suse.cz
 -------------------------------------------------------------------
 Mon Oct 31 09:15:10 CET 2011 - jsuchome@suse.cz
 
-- save ecdsa keys as well (bnc#726468) 
+- save ecdsa keys as well (bnc#726468)
 
 -------------------------------------------------------------------
 Fri Oct  7 11:40:40 UTC 2011 - jsrain@site
@@ -632,8 +639,8 @@ Tue Mar  2 14:30:31 CET 2010 - locilka@suse.cz
 -------------------------------------------------------------------
 Thu Jan 28 12:35:04 CET 2010 - kmachalkova@suse.cz
 
-- Added missing <label> to network services proposal (a default 
-  "Installation Overview" was used instead - bnc#572654) 
+- Added missing <label> to network services proposal (a default
+  "Installation Overview" was used instead - bnc#572654)
 
 -------------------------------------------------------------------
 Wed Dec  9 13:40:07 CET 2009 - locilka@suse.cz
@@ -684,8 +691,8 @@ Thu Nov 20 18:44:20 CET 2008 - locilka@suse.cz
 -------------------------------------------------------------------
 Tue Nov 11 13:29:04 CET 2008 - juhliarik@suse.cz
 
-- Changed order (summary) of yast modules in Expert tab 
-  (bnc #441434) 
+- Changed order (summary) of yast modules in Expert tab
+  (bnc #441434)
 
 -------------------------------------------------------------------
 Mon Oct 27 17:29:20 CET 2008 - locilka@suse.cz
@@ -1020,9 +1027,9 @@ Tue Apr 27 16:12:42 CEST 2004 - nashif@suse.de
 Fri Apr 16 14:48:40 CEST 2004 - nashif@suse.de
 
 - removed keyboard proposal from update proposal for the update
-  in the running system (bug #37817) 
+  in the running system (bug #37817)
 - add "service" proposal to SLES installation
-- removed remote proposal 
+- removed remote proposal
 
 -------------------------------------------------------------------
 Wed Apr  7 00:39:24 CEST 2004 - nashif@suse.de
@@ -1039,14 +1046,14 @@ Thu Apr  1 05:20:40 CEST 2004 - nashif@suse.de
 -------------------------------------------------------------------
 Wed Mar 31 19:08:12 CEST 2004 - nashif@suse.de
 
-- disable desktop variable on SLES (use_desktop_scheduler set to 
+- disable desktop variable on SLES (use_desktop_scheduler set to
   false)
 
 -------------------------------------------------------------------
 Thu Mar 25 03:32:53 CET 2004 - nashif@suse.de
 
 - Initial release
-  * dont delete rpms 
+  * dont delete rpms
   * enable evms
   * disable autologin
 
