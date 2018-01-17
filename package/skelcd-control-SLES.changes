@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Jan 17 13:28:22 UTC 2018 - lslezak@suse.cz
+
+- Display the product license at upgrade (just after selecting
+  the root partition) (bsc#1069124)
+- 15.0.15
+
+-------------------------------------------------------------------
 Mon Jan 15 14:08:48 UTC 2018 - snwint@suse.com
 
 - rewrite partitioning section to use new storage-ng settings
