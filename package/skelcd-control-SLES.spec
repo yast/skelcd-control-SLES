@@ -71,6 +71,7 @@ Requires:       yast2-tune
 Requires:       yast2-update
 Requires:       yast2-users
 Requires:       yast2-x11
+Requires:       yast2-vm
 # Ruby debugger in the inst-sys (FATE#318421)
 Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
 # Install and enable xrdp by default (FATE#320363)
@@ -83,10 +84,6 @@ Provides:       system-installation() = SLES
 %ifarch s390 s390x
 Requires:       yast2-reipl >= 3.1.4
 Requires:       yast2-s390
-%endif
-
-%ifarch %ix86 x86_64
-Requires:       yast2-vm
 %endif
 
 #
