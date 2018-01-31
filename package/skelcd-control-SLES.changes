@@ -1,3 +1,7 @@
+Wed Jan 31 15:32:36 CET 2018 - aginies@suse.com
+
+- remove ifarch for yast2-vm (BSC#1059952)
+
 -------------------------------------------------------------------
 Wed Jan 17 13:28:22 UTC 2018 - lslezak@suse.cz
 
