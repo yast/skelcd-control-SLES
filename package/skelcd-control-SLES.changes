@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Mon Feb 12 14:36:48 UTC 2018 - jreidinger@suse.com
+
+- do not append same workflow modules for upgrade and autoupgrade
+  as it is already part of sle15 installer control file
+  (bsc#1072113)
+- 15.0.16
+
+-------------------------------------------------------------------
 Wed Jan 17 13:28:22 UTC 2018 - lslezak@suse.cz
 
 - Display the product license at upgrade (just after selecting
