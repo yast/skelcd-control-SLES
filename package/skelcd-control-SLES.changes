@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Mar 12 16:59:57 UTC 2018 - igonzalezsosa@suse.com
+
+- Replace root_subvolume_read_only with btrfs_read_only (related
+  to bsc#1079000).
+- 15.0.17
+
+-------------------------------------------------------------------
 Mon Feb 12 14:36:48 UTC 2018 - jreidinger@suse.com
 
 - do not append same workflow modules for upgrade and autoupgrade
