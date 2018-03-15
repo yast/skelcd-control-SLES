@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Mar 14 17:30:47 UTC 2018 - knut.anderssen@suse.com
+
+- Added the fcoe-client to the list of clonable modules
+  (bsc#1078991)
+- 12.2.3
+
+-------------------------------------------------------------------
 Fri Aug 26 12:14:17 UTC 2016 - lslezak@suse.cz
 
 - Move the YaST self update step earlier in the workflow to avoid
