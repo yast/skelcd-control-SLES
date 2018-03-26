@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Mar 26 14:32:55 UTC 2018 - rbrown@suse.com
+
+- Create /root subvolume on fresh installs (bsc#1085266)
+- 15.0.18
+
+-------------------------------------------------------------------
 Mon Mar 12 16:59:57 UTC 2018 - igonzalezsosa@suse.com
 
 - Replace root_subvolume_read_only with btrfs_read_only (related
