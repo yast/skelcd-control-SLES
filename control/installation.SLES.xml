@@ -71,6 +71,9 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                         <path>opt</path>
                     </subvolume>
                     <subvolume>
+                        <path>root</path>
+                    </subvolume>
+                    <subvolume>
                         <path>srv</path>
                     </subvolume>
                     <subvolume>
