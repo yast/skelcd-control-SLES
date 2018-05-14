@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon May 14 10:13:57 UTC 2018 - ancor@suse.com
+
+- On the initial storage proposal, try disabling snapshots if it
+  was not enough to disable home and swap (bsc#1089274).
+- 15.0.19
+
+-------------------------------------------------------------------
 Wed Mar 26 14:32:55 UTC 2018 - rbrown@suse.com
 
 - Create /root subvolume on fresh installs (bsc#1085266)

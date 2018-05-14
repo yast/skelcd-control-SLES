@@ -57,6 +57,10 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <snapshots_configurable config:type="boolean">true</snapshots_configurable>
                 <snapshots_percentage config:type="integer">300</snapshots_percentage>
 
+                <!-- On the initial proposal, try disabling snapshots if it was
+                     not enough to disable /home and swap -->
+                <disable_order config:type="integer">3</disable_order>
+
                 <!-- the default subvolume "@" was requested by product management -->
                 <btrfs_default_subvolume>@</btrfs_default_subvolume>
                 <btrfs_read_only config:type="boolean">false</btrfs_read_only>
