@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Tue May 22 09:38:24 UTC 2018 - eich@suse.com
+
+- Add regexps to match "SUSE Linux Enterprise High Performance Computing"
+  These regexp will cause update settings for migration being changed for
+  matching products.
+  The additions will keep SLE-HPC in sync with SLES (bsc#1094166).
+- 12.4.0
+
+-------------------------------------------------------------------
 Thu Mar  8 10:06:50 UTC 2018 - knut.anderssen@suse.com
 
 - Added the fcoe-client to the list of clonable modules
