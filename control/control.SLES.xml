@@ -90,6 +90,7 @@ textdomain="control"
         <!-- For SLES12, unmaintained (old) packages are not removed by default, FATE #301844, bugzilla #233156 -->
         <delete_old_packages_reverse_list config:type="list">
             <regexp_item>^SUSE (LINUX|Linux) Enterprise Server 12.*$</regexp_item>
+            <regexp_item>^SUSE (LINUX|Linux) Enterprise H.*P.*C.* 12.*$</regexp_item>
         </delete_old_packages_reverse_list>
 
         <!-- By default, packages can be downgraded -->
@@ -97,6 +98,7 @@ textdomain="control"
         <!-- For SLES12, packages are not downgraded, FATE #301990, bugzilla #238488 -->
         <silently_downgrade_packages_reverse_list config:type="list">
             <regexp_item>^SUSE (LINUX|Linux) Enterprise Server 12.*$</regexp_item>
+            <regexp_item>^SUSE (LINUX|Linux) Enterprise H.*P.*C.* 12.*$</regexp_item>
         </silently_downgrade_packages_reverse_list>
 
         <!-- By default, select new packages for installation -->
@@ -104,12 +106,14 @@ textdomain="control"
         <!-- For SLES 12, do not install new packages by default, FATE #301844, bugzilla #871174 -->
         <only_update_selected_reverse_list config:type="list">
             <regexp_item>^SUSE (LINUX|Linux) Enterprise Server 12.*$</regexp_item>
+            <regexp_item>^SUSE (LINUX|Linux) Enterprise H.*P.*C.* 12.*$</regexp_item>
         </only_update_selected_reverse_list>
 
         <!-- Only upgrading from SLES11 or SLES12 is supported, otherwise warning is displayed -->
         <products_supported_for_upgrade config:type="list">
             <regexp_item>^SUSE (LINUX|Linux) Enterprise Server 11.*$</regexp_item>
             <regexp_item>^SUSE (LINUX|Linux) Enterprise Server 12.*$</regexp_item>
+            <regexp_item>^SUSE (LINUX|Linux) Enterprise H.*P.*C.* 12.*$</regexp_item>
         </products_supported_for_upgrade>
 
         <selection_type config:type="symbol">auto</selection_type>
