@@ -110,6 +110,10 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                         <path>boot/grub2/s390x-emu</path>
                         <archs>s390</archs>
                     </subvolume>
+                    <subvolume>
+                        <path>boot/grub2/arm64-efi</path>
+                        <archs>aarch64</archs>
+                    </subvolume>
                 </subvolumes>
             </volume>
 
