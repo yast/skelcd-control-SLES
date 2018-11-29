@@ -42,7 +42,7 @@ BuildRequires:  yast2-installation-control >= 4.0.10
 # SLES specific Yast packages needed in the inst-sys
 # to provide the functionality needed by this control file
 Requires:       yast2-registration
-Requires:       yast2-theme-SLE
+Requires:       yast2-theme
 
 # Generic Yast packages needed for the installer
 Requires:       autoyast2
@@ -94,7 +94,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        15.0.20
+Version:        15.0.21
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
