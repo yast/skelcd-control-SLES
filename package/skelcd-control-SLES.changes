@@ -1,8 +1,13 @@
 -------------------------------------------------------------------
+Tue Dec 11 16:47:45 UTC 2018 - dgonzalez@suse.com
+
+- Use FHS compliant path (fate#325482)
+- 15.1.0
+
+-------------------------------------------------------------------
 Thu Nov 29 13:48:40 UTC 2018 - Stasiek Michalski <hellcp@mailbox.org>
 
 - Update yast2-theme dependency (boo#1108422)
-- 15.0.21
 
 -------------------------------------------------------------------
 Tue Jun 12 14:24:11 UTC 2018 - rbrown@suse.com
