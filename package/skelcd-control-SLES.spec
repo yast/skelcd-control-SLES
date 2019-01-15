@@ -80,6 +80,8 @@ Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
 Requires:       yast2-rdp
 
 Provides:       system-installation() = SLES
+# Additional provides to use SLES version with BCL bundle
+Provides:       system-installation() = SLES_BCL
 
 # Architecture specific packages
 #
