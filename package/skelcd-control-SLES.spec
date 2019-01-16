@@ -47,7 +47,8 @@ Requires:       yast2-registration
 Requires:       yast2-theme
 
 # Generic Yast packages needed for the installer
-Requires:       yast2 >= 4.1.41
+# Needed for special product SLES_BCL
+Requires:       yast2 >= 4.1.52
 Requires:       autoyast2
 Requires:       yast2-add-on
 Requires:       yast2-buildtools
@@ -80,6 +81,8 @@ Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
 Requires:       yast2-rdp
 
 Provides:       system-installation() = SLES
+# Additional provides to use SLES version with BCL bundle
+Provides:       system-installation() = SLES_BCL
 
 # Architecture specific packages
 #
@@ -97,7 +100,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        15.1.0
+Version:        15.1.1
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
