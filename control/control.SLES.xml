@@ -243,6 +243,7 @@ textdomain="control"
             </subvolume>
             <subvolume>
                 <path>var/log</path>
+                <copy_on_write config:type="boolean">false</copy_on_write>
             </subvolume>
             <subvolume>
                 <path>var/opt</path>
