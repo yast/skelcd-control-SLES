@@ -150,6 +150,10 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <min_size config:type="disksize">1 GiB</min_size>
                 <max_size config:type="disksize">2 GiB</max_size>
                 <weight config:type="integer">10</weight>
+		<!-- The option to resume from RAM is not available for Z Systems.
+		     For this reason, in s390 the default value of adjust_by_ram
+		     is forced to false for the swap volume, even when it was set
+		     to true here. -->
                 <adjust_by_ram config:type="boolean">true</adjust_by_ram>
                 <adjust_by_ram_configurable config:type="boolean">true</adjust_by_ram_configurable>
 
