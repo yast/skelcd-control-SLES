@@ -202,6 +202,13 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <name>scc</name>
                 <enable_back>yes</enable_back>
                 <enable_next>yes</enable_next>
+                <!-- Skip the registration on the new online medium (already registered
+                     at this point) and offline medium (registration not required). -->
+                <!-- TODO: Remove this step completely once the old Installer and
+                     Packages DVD are dropped. -->
+                <arguments>
+                    <skip>online,offline</skip>
+                </arguments>
             </module>
             <module>
                 <label>System Analysis</label>
