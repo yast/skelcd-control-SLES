@@ -203,11 +203,9 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <enable_back>yes</enable_back>
                 <enable_next>yes</enable_next>
                 <!-- Skip the registration on the new online medium (already registered
-                     at this point) and offline medium (registration not required). -->
-                <!-- TODO: Remove this step completely once the old Installer and
-                     Packages DVD are dropped. -->
+                     at this point) -->
                 <arguments>
-                    <skip>online,offline</skip>
+                    <skip>online</skip>
                 </arguments>
             </module>
             <module>
