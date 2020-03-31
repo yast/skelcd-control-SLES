@@ -34,101 +34,158 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
         </minimal_role_description>
     </texts>
 
-    <partitioning>
-       <expert_partitioner_warning config:type="boolean">false</expert_partitioner_warning>
+        <partitioning>
+           <proposal>
+             <lvm config:type="boolean">true</lvm>
+             <encrypt config:type="boolean">false</encrypt>
+             <windows_delete_mode>all</windows_delete_mode>
+             <linux_delete_mode>all</linux_delete_mode>
+             <other_delete_mode>all</other_delete_mode>
+             <lvm_vg_strategy>use_available</lvm_vg_strategy>
+             <separate_vgs config:type="boolean">true</separate_vgs>
+             <multidisk_first config:type="boolean">true</multidisk_first>
+             <delete_resize_configurable config:type="boolean">false</delete_resize_configurable>
+             <allocate_volume_mode config:type="symbol">device</allocate_volume_mode>
+            </proposal>
 
-        <proposal>
-            <lvm config:type="boolean">false</lvm>
-            <proposal_settings_editable config:type="boolean">true</proposal_settings_editable>
-        </proposal>
+           <volumes config:type="list">
+             <!-- The root filesystem -->
+             <volume>
+               <mount_point>/</mount_point>
+               <!-- Enforce Btrfs for root by not offering any other option -->
+               <fs_type>btrfs</fs_type>
+               <desired_size>100GiB</desired_size>
+	       <!--               <min_size>40GiB</min_size> -->
+               <min_size>4GiB</min_size>
+               <max_size>100GiB</max_size>
+               <!-- Always use snapshots, no matter what -->
+               <snapshots config:type="boolean">true</snapshots>
+               <snapshots_configurable config:type="boolean">false</snapshots_configurable>
 
-        <volumes config:type="list">
-            <!-- / volume: 3 GiB - 10 GiB, *4 if snapshots are used -->
+               <btrfs_default_subvolume>@</btrfs_default_subvolume>
+               <subvolumes config:type="list">
+                 <subvolume>
+             	<path>home</path>
+                 </subvolume>
+                 <subvolume>
+             	<path>opt</path>
+                 </subvolume>
+                 <subvolume>
+             	<path>root</path>
+                 </subvolume>
+                 <subvolume>
+             	<path>srv</path>
+                 </subvolume>
+                 <subvolume>
+             	<path>tmp</path>
+                 </subvolume>
+                 <subvolume>
+             	<path>usr/local</path>
+                 </subvolume>
+                 <!-- unified var subvolume - https://lists.opensuse.org/opensuse-packaging/2017-11/msg00017.html -->
+                 <subvolume>
+             	<path>var</path>
+             	<copy_on_write config:type="boolean">false</copy_on_write>
+                 </subvolume>
+                 <!-- architecture specific subvolumes -->
+
+                 <subvolume>
+             	<path>boot/grub2/i386-pc</path>
+             	<archs>i386,x86_64</archs>
+                 </subvolume>
+                 <subvolume>
+             	<path>boot/grub2/x86_64-efi</path>
+             	<archs>x86_64</archs>
+                 </subvolume>
+                 <subvolume>
+             	<path>boot/grub2/powerpc-ieee1275</path>
+             	<archs>ppc,!board_powernv</archs>
+                 </subvolume>
+                 <subvolume>
+             	<path>boot/grub2/x86_64-efi</path>
+             	<archs>x86_64</archs>
+                 </subvolume>
+                 <subvolume>
+             	<path>boot/grub2/s390x-emu</path>
+             	<archs>s390</archs>
+                 </subvolume>
+                 <subvolume>
+             	<path>boot/grub2/arm64-efi</path>
+             	<archs>aarch64</archs>
+                 </subvolume>
+               </subvolumes>
+             </volume>
+
+             <!-- The swap volume -->
+             <volume>
+               <mount_point>swap</mount_point>
+               <fs_type>swap</fs_type>
+               <desired_size>2GiB</desired_size>
+               <min_size>2GiB</min_size>
+               <max_size>2GiB</max_size>
+             </volume>
+
+<!-- separate /var/spacewalk: 100 GiB - unlimited -->
             <volume>
-                <mount_point>/</mount_point>
-                <fs_type>btrfs</fs_type>
-
-                <desired_size config:type="disksize">5 GiB</desired_size>
-                <min_size config:type="disksize">3 GiB</min_size>
-                <max_size config:type="disksize">10 GiB</max_size>
-                <weight config:type="integer">60</weight>
-
-                <snapshots config:type="boolean">true</snapshots>
-                <snapshots_configurable config:type="boolean">true</snapshots_configurable>
-                <snapshots_percentage config:type="integer">300</snapshots_percentage>
-
-                <!-- On the initial proposal, try disabling snapshots if it was
-                     not enough to disable /home and swap -->
-                <disable_order config:type="integer">3</disable_order>
-
-                <!-- the default subvolume "@" was requested by product management -->
-                <btrfs_default_subvolume>@</btrfs_default_subvolume>
-                <btrfs_read_only config:type="boolean">false</btrfs_read_only>
-
-                <!-- subvolumes to be created for a Btrfs root file system -->
-                <!-- copy_on_write is true by default -->
-                <subvolumes config:type="list">
-                    <subvolume>
-                        <path>home</path>
-                    </subvolume>
-                    <subvolume>
-                        <path>opt</path>
-                    </subvolume>
-                    <subvolume>
-                        <path>root</path>
-                    </subvolume>
-                    <subvolume>
-                        <path>srv</path>
-                    </subvolume>
-                    <subvolume>
-                        <path>tmp</path>
-                    </subvolume>
-                    <subvolume>
-                        <path>usr/local</path>
-                    </subvolume>
-                    <!-- unified var subvolume - https://lists.opensuse.org/opensuse-packaging/2017-11/msg00017.html -->
-                    <subvolume>
-                        <path>var</path>
-                        <copy_on_write config:type="boolean">false</copy_on_write>
-                    </subvolume>
-
-                    <!-- architecture specific subvolumes -->
-
-                    <subvolume>
-                        <path>boot/grub2/i386-pc</path>
-                        <archs>i386,x86_64</archs>
-                    </subvolume>
-                    <subvolume>
-                        <path>boot/grub2/x86_64-efi</path>
-                        <archs>x86_64</archs>
-                    </subvolume>
-                    <subvolume>
-                        <path>boot/grub2/powerpc-ieee1275</path>
-                        <archs>ppc,!board_powernv</archs>
-                    </subvolume>
-                    <subvolume>
-                        <path>boot/grub2/s390x-emu</path>
-                        <archs>s390</archs>
-                    </subvolume>
-                    <subvolume>
-                        <path>boot/grub2/arm64-efi</path>
-                        <archs>aarch64</archs>
-                    </subvolume>
-                </subvolumes>
-            </volume>
-
-            <!-- separate /home: 5 GiB - unlimited -->
-            <volume>
-                <mount_point>/home</mount_point>
+	    <mount_point>/var/spacewalk</mount_point>
                 <fs_type>xfs</fs_type>
+	        <separate_vg_name>spacewalk</separate_vg_name>
 
                 <proposed_configurable config:type="boolean">true</proposed_configurable>
+		<proposed config:type="boolean">true</proposed>
+
+                <desired_size config:type="disksize">300 GiB</desired_size>
+                <min_size config:type="disksize">100 GiB</min_size>
+                <max_size config:type="disksize">unlimited</max_size>
+                <max_size_lvm config:type="disksize">300 GiB</max_size_lvm>
+                <weight config:type="integer">40</weight>
+
+                <disable_order config:type="integer">4</disable_order>
+
+                <!-- if this volume is disabled we want "/" to increase -->
+                <fallback_for_desired_size>/</fallback_for_desired_size>
+                <fallback_for_max_size>/</fallback_for_max_size>
+                <fallback_for_max_size_lvm>/</fallback_for_max_size_lvm>
+                <fallback_for_weight>/</fallback_for_weight>
+             </volume>
+
+<!-- separate /var/lib/pgsql: 50 GiB - unlimited -->
+            <volume>
+	    <mount_point>/var/lib/pgsql</mount_point>
+                <fs_type>xfs</fs_type>
+	        <separate_vg_name>pgsql</separate_vg_name>
+
+                <proposed_configurable config:type="boolean">true</proposed_configurable>
+		<proposed config:type="boolean">true</proposed>
+
+                <desired_size config:type="disksize">60 GiB</desired_size>
+                <min_size config:type="disksize">50 GiB</min_size>
+                <max_size config:type="disksize">unlimited</max_size>
+                <max_size_lvm config:type="disksize">60 GiB</max_size_lvm>
+                <weight config:type="integer">40</weight>
+
+                <disable_order config:type="integer">3</disable_order>
+
+                <!-- if this volume is disabled we want "/" to increase -->
+                <fallback_for_desired_size>/</fallback_for_desired_size>
+                <fallback_for_max_size>/</fallback_for_max_size>
+                <fallback_for_max_size_lvm>/</fallback_for_max_size_lvm>
+                <fallback_for_weight>/</fallback_for_weight>
+             </volume>
+<!-- separate /var/cache: 4 GB - unlimited -->
+            <volume>
+	     <mount_point>/var/cache</mount_point>
+                <fs_type>xfs</fs_type>
+	        <separate_vg_name>system_cache</separate_vg_name>
+
+                <proposed_configurable config:type="boolean">true</proposed_configurable>
+		<proposed config:type="boolean">true</proposed>
 
                 <desired_size config:type="disksize">10 GiB</desired_size>
-                <min_size config:type="disksize">5 GiB</min_size>
+                <min_size config:type="disksize">4 GiB</min_size>
                 <max_size config:type="disksize">unlimited</max_size>
-                <max_size_lvm config:type="disksize">25 GiB</max_size_lvm>
-                <weight config:type="integer">40</weight>
+                <max_size_lvm config:type="disksize">10 GiB</max_size_lvm>
+                <weight config:type="integer">20</weight>
 
                 <disable_order config:type="integer">1</disable_order>
 
@@ -137,31 +194,33 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 <fallback_for_max_size>/</fallback_for_max_size>
                 <fallback_for_max_size_lvm>/</fallback_for_max_size_lvm>
                 <fallback_for_weight>/</fallback_for_weight>
-            </volume>
+             </volume>
 
-            <!-- swap: 1 GiB - 2 GiB, but at least RAM size -->
+<!-- separate /srv: 200 GiB - unlimited -->
             <volume>
-                <mount_point>swap</mount_point>
-                <fs_type>swap</fs_type>
+	    <mount_point>/srv</mount_point>
+                <fs_type>xfs</fs_type>
+	        <separate_vg_name>srv</separate_vg_name>
 
-                <proposed_configurable config:type="boolean">true</proposed_configurable>
+		<proposed_configurable config:type="boolean">true</proposed_configurable>
+		<proposed config:type="boolean">true</proposed>
 
-                <desired_size config:type="disksize">2 GiB</desired_size>
-                <min_size config:type="disksize">1 GiB</min_size>
-                <max_size config:type="disksize">2 GiB</max_size>
-                <weight config:type="integer">10</weight>
-		<!-- The option to resume from RAM is not available for Z Systems.
-		     For this reason, in s390 the default value of adjust_by_ram
-		     is forced to false for the swap volume, even when it was set
-		     to true here. -->
-                <adjust_by_ram config:type="boolean">true</adjust_by_ram>
-                <adjust_by_ram_configurable config:type="boolean">true</adjust_by_ram_configurable>
+                <desired_size config:type="disksize">300 GiB</desired_size>
+                <min_size config:type="disksize">200 GiB</min_size>
+                <max_size config:type="disksize">unlimited</max_size>
+                <max_size_lvm config:type="disksize">300 GiB</max_size_lvm>
+                <weight config:type="integer">40</weight>
 
                 <disable_order config:type="integer">2</disable_order>
-            </volume>
 
-        </volumes>
-    </partitioning>
+                <!-- if this volume is disabled we want "/" to increase -->
+                <fallback_for_desired_size>/</fallback_for_desired_size>
+                <fallback_for_max_size>/</fallback_for_max_size>
+                <fallback_for_max_size_lvm>/</fallback_for_max_size_lvm>
+                <fallback_for_weight>/</fallback_for_weight>
+             </volume>
+           </volumes>
+        </partitioning>
 
     <update>
       <system_roles>
