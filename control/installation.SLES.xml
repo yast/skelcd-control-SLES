@@ -15,7 +15,7 @@ textdomain="control"
         </roles_caption>
         <roles_text>
           <!-- TRANSLATORS: label in a dialog -->
-          <label>System Roles are predefined use cases which tailor the system
+          <label>MULTIDISK System Roles are predefined use cases which tailor the system
 for the selected scenario.</label>
         </roles_text>
         <roles_help>
