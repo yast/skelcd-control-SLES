@@ -22,7 +22,7 @@
 #   in build service directly, use
 #   https://github.com/yast/skelcd-control-SLES repository
 #
-#   See https://github.com/yast/skelcd-control-SLES/blob/master/CONTRIBUTING.md
+#   See https://github.com/yast/.github/blob/master/CONTRIBUTING.md
 #   for more details.
 #
 ######################################################################
