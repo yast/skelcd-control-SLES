@@ -9,7 +9,9 @@ textdomain="control"
     <textdomain>control</textdomain>
 
     <software>
-        <!-- the default preselected modules for the Full installation medium -->
+        <!-- the default preselected modules for the Full installation medium
+             https://bugzilla.suse.com/show_bug.cgi?id=1171814
+             https://jira.suse.com/browse/SLE-8040 -->
         <default_modules config:type="list">
             <default_module>sle-module-basesystem</default_module>
             <default_module>sle-module-server-applications</default_module>
