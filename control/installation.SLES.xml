@@ -343,10 +343,6 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
                 </module>
                 <module>
                     <label>Perform Installation</label>
-                    <name>autoimage</name>
-                </module>
-                <module>
-                    <label>Perform Installation</label>
                     <name>rpmcopy</name>
                 </module>
                 <module>
