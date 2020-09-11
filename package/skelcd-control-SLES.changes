@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Sep 11 12:11:46 UTC 2020 - Ladislav Slezák <lslezak@suse.cz>
+
+- Preselect the Basesystem and Server Applications modules
+  when using the Full installation medium (bsc#1171814)
+- 15.3.2
+
+-------------------------------------------------------------------
 Wed Jul 29 10:59:21 CEST 2020 - schubi@suse.de
 
 - Removed unneeded AY installation step "autoimage" (bsc#1140711).
