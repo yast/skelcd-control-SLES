@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Oct  1 14:48:15 CEST 2020 - schubi@suse.de
+
+- Update openSUSE->SUSE LLC. Allow vendor change without asking
+  the user (jsc#SLE-15184).
+- 15.3.3
+
+-------------------------------------------------------------------
 Fri Sep 11 12:11:46 UTC 2020 - Ladislav Slezák <lslezak@suse.cz>
 
 - Preselect the Basesystem and Server Applications modules
