@@ -16,8 +16,8 @@ textdomain="control"
             <default_module>sle-module-basesystem</default_module>
             <default_module>sle-module-server-applications</default_module>
         </default_modules>
-        <!-- Do not ask for vendor change for these products -->
         <upgrade>
+            <!-- Do not ask for vendor change for these products -->
             <compatible_vendors config:type="list">
                 <compatible_vendor>openSUSE</compatible_vendor>
                 <compatible_vendor>SUSE LLC</compatible_vendor>
