@@ -19,17 +19,17 @@ textdomain="control"
         <upgrade>
             <!-- Ask for vendor change while upgrading between these products -->
 	    <ask_verdor_changes config:type="list">
-	        <product>SLES</product>
-	        <product>SLED</product>
-	        <product>sle-module-hpc</product>
-	        <product>SLE_HPC</product>
-	        <product>SUSE-Manager-Proxy</product>
-	        <product>SUSE-Manager-Server</product>
-	        <product>SUSE-Manager-Retail-Branch-Server</product>
-	        <product>SLE-HPC</product>
-	        <product>SUSE_SLES</product>
-	        <product>SUSE_SLED</product>
-	        <product>SUSE_SLES_SAP</product>
+                <product>SLES</product>
+                <product>SLED</product>
+                <product>sle-module-hpc</product>
+                <product>SLE_HPC</product>
+                <product>SUSE-Manager-Proxy</product>
+                <product>SUSE-Manager-Server</product>
+                <product>SUSE-Manager-Retail-Branch-Server</product>
+                <product>SLE-HPC</product>
+                <product>SUSE_SLES</product>
+                <product>SUSE_SLED</product>
+                <product>SUSE_SLES_SAP</product>
                 <product>SLES_SAP</product>
 	    </ask_verdor_changes>
 	    <!-- Set these compatible vendors if no vendor change has to be accepted -->
