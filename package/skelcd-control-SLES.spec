@@ -33,7 +33,7 @@ Name:           skelcd-control-%{skelcd_name}
 # xmllint (for validation)
 BuildRequires:  libxml2-tools
 # Added skelcd macros
-BuildRequires:  yast2-installation-control >= 4.1.5
+BuildRequires:  yast2-installation-control >= 4.3.4
 
 ######################################################################
 #
