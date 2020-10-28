@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Oct 27 14:53:23 UTC 2020 - Yifan Jiang <yfjiang@suse.com>
+
+- Adapt migration from older SLE using kde (bsc#1176056)
+- 15.3.3
+
+-------------------------------------------------------------------
 Fri Sep 11 12:11:46 UTC 2020 - Ladislav Slezák <lslezak@suse.cz>
 
 - Preselect the Basesystem and Server Applications modules
