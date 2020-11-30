@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Nov 30 09:04:32 UTC 2020 - Josef Reidinger <jreidinger@suse.com>
+
+- Unify description for system roles so all looks like list
+  (jsc#SLE-14772)
+- 15.3.4
+
+-------------------------------------------------------------------
 Tue Oct 27 14:53:23 UTC 2020 - Yifan Jiang <yfjiang@suse.com>
 
 - Adapt migration from older SLE using kde (bsc#1176056)
