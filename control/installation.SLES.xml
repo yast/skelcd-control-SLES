@@ -40,7 +40,7 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
           <label>Minimal</label>
         </minimal_role>
         <minimal_role_description>
-          <label>Minimal software selection for SUSE Linux Enterprise.</label>
+          <label>• Minimal software selection for SUSE Linux Enterprise.</label>
         </minimal_role_description>
     </texts>
 
