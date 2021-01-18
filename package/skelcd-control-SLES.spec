@@ -34,7 +34,8 @@ Name:           skelcd-control-%{skelcd_name}
 BuildRequires:  libxml2-tools
 # Added skelcd macros
 BuildRequires:  yast2-installation-control >= 4.1.5
-BuildRequires:  sle15-desktop-migration
+# add it for migration of old KDE desktop
+Requires:  sle15-desktop-migration
 
 ######################################################################
 #
