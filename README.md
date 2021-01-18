@@ -1,8 +1,9 @@
 skelcd-control-SLES
 ===================
 
-[![Travis Build](https://travis-ci.org/yast/skelcd-control-SLES.svg?branch=master)](https://travis-ci.org/yast/skelcd-control-SLES)
 
+[![Workflow Status](https://github.com/yast/skelcd-control-SLES/workflows/CI/badge.svg?branch=master)](
+https://github.com/yast/skelcd-control-SLES/actions?query=branch%3Amaster)
 
 Installation control file for SUSE Linux Enterprise Server product
 
