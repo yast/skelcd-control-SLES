@@ -34,7 +34,8 @@ Name:           skelcd-control-%{skelcd_name}
 BuildRequires:  libxml2-tools
 # Added skelcd macros
 BuildRequires:  yast2-installation-control >= 4.1.5
-BuildRequires:  sle15-desktop-migration
+# add it for migration of old KDE desktop
+Requires:  sle15-desktop-migration
 
 ######################################################################
 #
@@ -101,7 +102,7 @@ Requires:       yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLES
 AutoReqProv:    off
-Version:        15.3.4
+Version:        15.3.5
 Release:        0
 Summary:        SLES control file needed for installation
 License:        MIT
