@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Feb 25 09:50:24 UTC 2021 - David Diaz <dgonzalez@suse.com>
+
+- Set SELinux permissive mode by default (related to jsc#SLE-17307)
+- 15.3.6
+
+-------------------------------------------------------------------
 Tue Jan 19 14:19:08 UTC 2021 - Josef Reidinger <jreidinger@suse.com>
 
 - Fix for SLE kde migration to use only runtime requirements
