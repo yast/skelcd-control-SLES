@@ -8,6 +8,14 @@ textdomain="control"
 
     <textdomain>control</textdomain>
 
+    <globals>
+        <!-- Set SELinux permissive mode by default -->
+        <selinux>
+          <mode>enforcing</mode>
+          <configurable config:type="boolean">true</configurable>
+          <patterns>selinux</patterns>
+        </selinux>
+    </globals>
     <software>
         <!-- the default preselected modules for the Full installation medium
              https://bugzilla.suse.com/show_bug.cgi?id=1171814
