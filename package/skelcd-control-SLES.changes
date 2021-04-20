@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Tue Apr 20 13:51:55 UTC 2021 - Ladislav Slezák <lslezak@suse.cz>
+
+- 15.4.0
+
+-------------------------------------------------------------------
 Tue Jan 19 14:19:08 UTC 2021 - Josef Reidinger <jreidinger@suse.com>
 
 - Fix for SLE kde migration to use only runtime requirements
