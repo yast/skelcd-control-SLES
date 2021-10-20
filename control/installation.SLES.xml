@@ -208,16 +208,6 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
           <stage>initial</stage>
           <append_modules config:type="list">
             <module>
-                <name>scc</name>
-                <enable_back>yes</enable_back>
-                <enable_next>yes</enable_next>
-                <!-- Skip the registration on the new online medium (already registered
-                     at this point) -->
-                <arguments>
-                    <skip>online</skip>
-                </arguments>
-            </module>
-            <module>
                 <label>System Analysis</label>
                 <name>installation_options</name>
             </module>
