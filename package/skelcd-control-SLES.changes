@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Wed Apr 06 13:24:58 UTC 2022 - Ladislav Slezák <lslezak@suse.cz>
+
+- Bump version to 15.5.0 (#bsc1198109)
+
+-------------------------------------------------------------------
 Mon Nov 15 07:43:45 UTC 2021 - Ladislav Slezák <lslezak@suse.cz>
 
 - Remove the registration step because it is called earlier
